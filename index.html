@@ -351,8 +351,8 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
       <text class="axis" x="150" y="118" text-anchor="middle">0%</text>
       <text class="axis" x="415" y="118" text-anchor="middle">50%</text>
       <text class="axis" x="680" y="118" text-anchor="middle">100%</text>
-      <text class="axis" x="15" y="140">脳の画像を見ると、AIを使ったグループは「自分で考える」作業から「AIの答えを確認するだけ」の作業に切り替わっていた（Kosmyna et al. 2025）</text>
     </svg>
+    <p class="fig-note">脳の画像を見ると、AIを使ったグループは「自分で考える」作業から「AIの答えを確認するだけ」の作業に切り替わっていた（Kosmyna et al. 2025）。</p>
   </figure>
 
   <blockquote class="pull">
@@ -381,7 +381,68 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
 
   <figure class="chart-fig">
     <figcaption class="above">
-      <span class="fig-label">Fig. 4 — Dot Plot（単一指標）</span>
+      <span class="fig-label">Fig. 4 — Slope（経年比較）</span>
+      <span class="fig-title">PISA読解力の下落は「そこまで大きくない」——回帰3カ国とフィンランドの差</span>
+      <span class="fig-dek">読解力の平均点、2006年 → 2022年（OECD公式値、複数の二次資料で照合済み）</span>
+    </figcaption>
+    <svg class="chart" viewBox="0 0 700 250" role="img" aria-label="PISA読解力スロープチャート2006年から2022年。フィンランド547から490（-57）、スウェーデン507から487（-20）、ノルウェー484から477（-7）、デンマーク494から489（-5）、日本498から516（+18）">
+      <line class="grid-l" x1="150" y1="47" x2="540" y2="47"/>
+      <text class="axis" x="142" y="51" text-anchor="end">550</text>
+      <line class="grid-l" x1="150" y1="115" x2="540" y2="115"/>
+      <text class="axis" x="142" y="119" text-anchor="end">510</text>
+      <line class="grid-l" x1="150" y1="183" x2="540" y2="183"/>
+      <text class="axis" x="142" y="187" text-anchor="end">470</text>
+      <text class="cat" x="150" y="222" text-anchor="middle" font-weight="700">2006年</text>
+      <text class="cat" x="540" y="222" text-anchor="middle" font-weight="700">2022年</text>
+      <line x1="150" y1="52.1" x2="540" y2="149" stroke="#b3453f" stroke-width="2.5"/>
+      <circle cx="150" cy="52.1" r="5.5" fill="#b3453f"/><circle cx="540" cy="149" r="5.5" fill="#b3453f"/>
+      <text class="val warm" x="556" y="153">490　フィンランド</text>
+      <text class="val warm" x="134" y="48" text-anchor="end">547</text>
+      <line x1="150" y1="120.1" x2="540" y2="154.1" stroke="#9b9b96" stroke-width="2"/>
+      <circle cx="150" cy="120.1" r="5" fill="#9b9b96"/><circle cx="540" cy="154.1" r="5" fill="#9b9b96"/>
+      <text class="val" x="556" y="171" fill="#6f6f6a">487　スウェーデン</text>
+      <text class="val" x="134" y="116" text-anchor="end" fill="#6f6f6a">507</text>
+      <line x1="150" y1="142.2" x2="540" y2="150.7" stroke="#9b9b96" stroke-width="2"/>
+      <circle cx="150" cy="142.2" r="5" fill="#9b9b96"/><circle cx="540" cy="150.7" r="5" fill="#9b9b96"/>
+      <text class="val" x="556" y="145" fill="#6f6f6a">489　デンマーク</text>
+      <text class="val" x="134" y="138" text-anchor="end" fill="#6f6f6a">494</text>
+      <line x1="150" y1="159.2" x2="540" y2="171.1" stroke="#9b9b96" stroke-width="2"/>
+      <circle cx="150" cy="159.2" r="5" fill="#9b9b96"/><circle cx="540" cy="171.1" r="5" fill="#9b9b96"/>
+      <text class="val" x="556" y="192" fill="#6f6f6a">477　ノルウェー</text>
+      <text class="val" x="134" y="163" text-anchor="end" fill="#6f6f6a">484</text>
+      <line x1="150" y1="135.4" x2="540" y2="104.8" stroke="#1a4d8f" stroke-width="2.5"/>
+      <circle cx="150" cy="135.4" r="5.5" fill="#1a4d8f"/><circle cx="540" cy="104.8" r="5.5" fill="#1a4d8f"/>
+      <text class="val acc" x="556" y="101">516　日本</text>
+      <text class="val acc" x="134" y="139" text-anchor="end">498</text>
+    </svg>
+    <p class="fig-note"><strong>読み方:</strong> 回帰した3カ国（スウェーデン−20点・デンマーク−5点・ノルウェー−7点）の下がり方は、実はそこまで大きくない。むしろデジタル化を続けているフィンランドの方が<strong>−57点</strong>と、5カ国の中で一番大きく下がっている。「点数が落ちたから北欧はアナログに戻った」という単純な話は、この数字と噛み合わない。出典: Wikipedia・factsmaps.com・theglobaleconomy.comの集計値（2026-07-15収集、OECD公式データベースでの裏取りを推奨）。</p>
+  </figure>
+
+  <p>実際に各国の資料を読むと、「回帰」の根拠として直接使われているのはPISAの点数そのものではない。スウェーデンが根拠にしているのは、カロリンスカ研究所（医学・脳科学で有名な大学）がまとめた研究レビュー——Klingberg(2023)の「スクリーン読書は読解力を36%下げる」という研究、Mueller & Oppenheimer(2014)の「手書きの方が学習効果が高い」という研究など。ノルウェーは「PISA・PIRLSで最も読解力が低い層の生徒が増えている」という<b>分布の変化</b>を根拠にしている（平均点の話ではない）。デンマークにいたっては、資料の中にPISAへの言及が一つも無い——根拠は生徒への利用実態アンケートと、1つの学校の2週間の実験だけだ。</p>
+
+  <div class="contrast">
+    <div class="cell">
+      <h4>フィンランド — なぜ一番下がっても続けるのか</h4>
+      <ul>
+        <li>フィンランド国家教育庁（Opetushallitus）の公式見解は、下落の原因を<b>一つに絞らない</b>——家庭間の経済格差、勉強への意欲低下、コロナ後のウクライナ戦争による心理的な影響、SNS、メンタルヘルスの問題</li>
+        <li>「1日6時間を超えなければ、デジタル機器を多く使う生徒ほど数学の成績が良かった」というデータを、デジタル化を続ける<b>理由</b>として挙げている</li>
+        <li>フィンランドの「2027年までにデジタル化を進める」という方針は<b>2023年4月</b>発表——PISA 2022の結果が出た<b>2023年12月より前</b>に書かれたもの。「下落を知った上で続けている」わけではない点に注意</li>
+      </ul>
+    </div>
+    <div class="cell">
+      <h4>スマホ禁止は「デジタル教育をやめる」ことではない</h4>
+      <ul>
+        <li>フィンランドの携帯電話規制法は<b>2025年8月1日</b>施行（ネット記事に出回る「2023年6月」は誤り）</li>
+        <li>「授業中の携帯電話は原則禁止」としつつ、<b>学習目的なら先生の許可があれば使ってよい</b>という例外つき</li>
+        <li>禁止しているのは<b>個人のスマホ・娯楽利用</b>。<b>教育目的のデジタル機器・カリキュラム</b>（2027年方針）とは別の話</li>
+        <li>スウェーデンの携帯電話回収も幼稚園でのデジタル義務撤廃も同じ構造——義務や娯楽利用を止めるのであって、学校のICT投資自体をやめるわけではない</li>
+      </ul>
+    </div>
+  </div>
+
+  <figure class="chart-fig">
+    <figcaption class="above">
+      <span class="fig-label">Fig. 5 — Dot Plot（単一指標）</span>
       <span class="fig-title">授業中の集中阻害：日本は北欧が抱える問題を、まだ抱えていない</span>
       <span class="fig-dek">数学授業で「他の生徒のデバイス使用」により注意が散漫になった生徒の割合（PISA 2022・同一指標のみ比較）</span>
     </figcaption>
@@ -418,7 +479,7 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
 
   <figure class="chart-fig">
     <figcaption class="above">
-      <span class="fig-label">Fig. 5 — Slope（2時点変化）</span>
+      <span class="fig-label">Fig. 6 — Slope（2時点変化）</span>
       <span class="fig-title">GIGAスクール5年の到達点：機材は揃った、運用が残った</span>
       <span class="fig-dek">学校ICT環境の主要指標、2019年3月 → 2024年3月（文部科学省確定値）</span>
     </figcaption>
@@ -449,7 +510,7 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
 
   <figure class="chart-fig">
     <figcaption class="above">
-      <span class="fig-label">Fig. 6 — Range Plot（調査間ばらつき）</span>
+      <span class="fig-label">Fig. 7 — Range Plot（調査間ばらつき）</span>
       <span class="fig-title">生徒側はすでに「AIネイティブ」：利用率は調査によって幅がある</span>
       <span class="fig-dek">生成AI利用経験率の調査間レンジ（2024–2025、民間・公的調査の最小〜最大）</span>
     </figcaption>
@@ -521,6 +582,10 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
     <li>文部科学省「学校における教育の情報化の実態等に関する調査」令和6年3月確定値</li>
     <li>学研 / CyberAgent / 進学ネット / 総務省情報通信白書 (2024–2025)</li>
     <li>Australian Framework for Generative AI in Schools (2023) / 2024 Review</li>
+    <li>Karolinska Institutet, <i>Beslut om yttrande över förslag till nationell digitaliseringsstrategi för skolväsendet 2023–2027</i> (2023-04)</li>
+    <li>Finnish National Agency for Education (Opetushallitus), "PISA results reflect broader changes in Finnish society" (blog, 2024)</li>
+    <li>Valtioneuvosto (フィンランド政府), "Restrictions to be placed on the use of phones and mobile devices in schools" (施行: 2025-08-01)</li>
+    <li>Wikipedia, "Programme for International Student Assessment" / "(2000 to 2012)" — PISA読解力2006-2022の得点系列</li>
   </ol>
   <p class="design-note">様式: Editorial Grid / Magazine（ui-ux-pro-max）・Academic/Research書体ペア（Crimson Pro × Atkinson Hyperlegible）。元となる統合レポート.md（質的統合・全文引用付き）は同フォルダに原文のまま保存。本ページはその平易版であり、詳細な一次資料の原文引用は下記「根拠抜粋」に格納。</p>
 </footer>
@@ -580,6 +645,7 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
 
   <div class="evidence-group">
     <h4>ノルウェースクリーン委員会報告</h4>
+    <p class="q-item"><span class="orig">"I lys av den nedadgående trenden i leseferdigheter, samt økningen av elever på laveste leseferdighetsnivå i PISA og PIRLS, er det viktig at skjermbruk i skolen ikke fortrenger lesning på papir."（読解力の下降トレンド、およびPISA・PIRLSにおける最低読解力レベルの生徒の増加を踏まえ、学校でのスクリーン使用が紙での読書を妨げないことが重要）</span><span class="topic">論点: 読解力低下トレンドとPISA・PIRLS最低読解力層の増加</span></p>
     <p class="q-item"><span class="orig">"En foreløpig konklusjon fra utvalget er at det er mye som tyder på at elevene bør lese mer på papir."（委員会の暫定的結論として、生徒はもっと紙で読むべきであることを示す多くの根拠がある）</span><span class="topic">論点: 生徒がもっと紙で読むべきという暫定結論</span></p>
   </div>
 
@@ -612,7 +678,19 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
     <p class="q-item"><span class="orig">「ICT支援員について、文部科学省は、４校に１人程度を目標に掲げて配置を促進してきたものの、令和４年度末時点の配置実績は、約7,100人（約4.6校に１人）となっており、目標水準が達成されていない状況にある。」</span><span class="topic">論点: ICT支援員配置の現状と課題</span></p>
   </div>
 
-  <p style="font-size:12px; color:var(--faint); margin-top:20px;">出典：日豪AI教育政策比較（v3, 2026-07-12）、AI認知的オフローディング（v3, 2026-07-13）、北欧アナログ回帰（v3, 2026-07-14）の3レポートの根拠抜粋、および dashboard_B作成時の追加一次資料（TALIS 2024, Bastani et al. PNAS 2024, 文科省GIGAスクール実態調査等）から転記。</p>
+  <div class="evidence-group">
+    <h4>フィンランド国家教育庁公式見解（Finnish National Agency for Education, "PISA results reflect broader changes in Finnish society"）</h4>
+    <p class="q-item"><span class="orig">"increasing socio-economic inequalities between families, the level of resources allocated to education, polarisation in children's and young people's literacy, lack of motivation, loss of faith in education, pull of the social media, and mental health problems."（家庭間の社会経済的不平等の増大、教育への資源配分の水準、子ども・若者の読み書き能力の二極化、動機の欠如、教育への信頼喪失、ソーシャルメディアの牽引力、メンタルヘルス問題）</span><span class="topic">論点: PISA得点下落要因の多元的説明（デジタル化政策を主因としない）</span></p>
+    <p class="q-item"><span class="orig">"In the latest PISA study, for example, the more pupils said they used digital devices, the better their competence in mathematics was, as long as they did not spend more than six hours a day on their devices."（最新のPISA調査では、1日6時間を超えない範囲で、デジタル機器の使用が多いと答えた生徒ほど数学の成績が良かった）</span><span class="topic">論点: デジタル機器使用の用量反応関係（1日6時間閾値）</span></p>
+  </div>
+
+  <div class="evidence-group">
+    <h4>フィンランド携帯電話規制法（Valtioneuvosto, "Restrictions to be placed on the use of phones and mobile devices in schools"）</h4>
+    <p class="q-item"><span class="orig">"the use of phones or other mobile devices during lessons would be prohibited as a rule"（授業中の携帯電話・モバイル機器の使用は原則禁止とする）</span><span class="topic">論点: 授業中の携帯電話・モバイル機器使用の原則禁止（施行日: 2025年8月1日）</span></p>
+    <p class="q-item"><span class="orig">"Students would only be allowed to use their phones or other mobile devices during lessons for learning purposes or for personal healthcare reasons with permission"（生徒が授業中に携帯電話・モバイル機器を使用できるのは、学習目的または個人の健康上の理由により許可がある場合に限る）</span><span class="topic">論点: 学習目的・健康上の理由での許可制利用という除外規定</span></p>
+  </div>
+
+  <p style="font-size:12px; color:var(--faint); margin-top:20px;">出典：日豪AI教育政策比較（v3, 2026-07-12）、AI認知的オフローディング（v3, 2026-07-13）、北欧アナログ回帰（v3, 2026-07-14）の3レポートの根拠抜粋、dashboard_B作成時の追加一次資料（TALIS 2024, Bastani et al. PNAS 2024, 文科省GIGAスクール実態調査等）、およびフィンランド国家教育庁・フィンランド政府公式発表（2026-07-15収集）から転記。</p>
 </details>
 
 </div>

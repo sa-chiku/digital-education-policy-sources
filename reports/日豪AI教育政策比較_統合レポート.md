@@ -8,7 +8,10 @@ tags:
   - cognitive-offloading
   - nordic-implications
 status: complete
-source_version: v3
+source_version: v4
+published_url: https://sa-chiku.github.io/digital-education-policy-sources/
+published_repo: https://github.com/sa-chiku/digital-education-policy-sources
+published_artifact: https://claude.ai/code/artifact/04b3c8ef-bbe0-4bda-8453-c2a10c0fd374
 note: |
   本レポートはvault内の既存3レポート(日豪AI教育政策比較/AI認知的オフローディング/
   北欧アナログ回帰)を統合した二次統合分析(meta-synthesis)。新規の一次資料取得・
@@ -23,7 +26,19 @@ note: |
   セクションから本レポート自身の「根拠抜粋」セクションへ転記し、`[ソース名 #番号]`形式の
   通常引用(本文中の角括弧引用は本レポート自身の根拠抜粋を指す)で完結させた。転記元の
   対応関係は「使用したソース一覧」に元レポート名として明記した。
+  v4(2026-07-15)では、北欧アナログ回帰.mdへ追記した「2-5. PISA得点そのものは回帰の
+  主因ではない」節の内容を、本レポートの3.4節として同期。ノルウェースクリーン委員会
+  報告#5(PISA/PIRLS低得点層言及)を根拠抜粋に追加、フィンランド国家教育庁公式見解
+  (Opetushallitus)・フィンランド携帯電話規制法(Valtioneuvosto)の2ソースを新規追加し、
+  本文中の`[ソース名 #N](#anchor)`形式で全てリンク化した。日豪AI教育政策比較_
+  dashboard_B_editorial-magazine.html(Fig.4追加)・日豪AI教育政策比較_統合レポート_
+  簡潔版.md(3.4節追加)にも同内容を反映済み。
 ---
+
+> [!abstract] 公開版
+> GitHub Pages: https://sa-chiku.github.io/digital-education-policy-sources/
+> ソースリポジトリ: https://github.com/sa-chiku/digital-education-policy-sources
+> Claude Artifact: https://claude.ai/code/artifact/04b3c8ef-bbe0-4bda-8453-c2a10c0fd374
 
 # 問い
 
@@ -150,6 +165,22 @@ note: |
 > - URL: https://www.mext.go.jp/content/20240805-mxt_jogai02-000037400_01.pdf
 > - 転記元: 北欧アナログ回帰（v3, 2026-07-14）
 
+---
+
+> [!info] PISA results reflect broader changes in Finnish society
+> - 発行元: Finnish National Agency for Education (Opetushallitus)
+> - 発行日: 2024
+> - URL: https://www.oph.fi/en/blog/pisa-results-reflect-broader-changes-finnish-society
+> - 取得: 本セッションWebFetch（2026-07-15）。フィンランド国家教育庁の公式ブログであり、PISA得点下落の多元的要因説明と、デジタル機器使用の用量反応知見(1日6時間閾値)の出典。
+
+---
+
+> [!info] Restrictions to be placed on the use of phones and mobile devices in schools
+> - 発行元: Valtioneuvosto（フィンランド政府）
+> - 発行日: 2025（施行日: 2025-08-01）
+> - URL: https://valtioneuvosto.fi/en/-/1410845/restrictions-to-be-placed-on-the-use-of-phones-and-mobile-devices-in-schools
+> - 取得: 本セッションWebFetch（2026-07-15）。俗説の「2023年6月施行」は誤りであることの一次確認、および学習目的利用の許可制除外規定の出典。
+
 # Claudeによる統合分析
 
 > [!note] 本文中の参照について
@@ -248,6 +279,22 @@ note: |
 > 回帰3カ国に共通するのは、1人1台環境が定着した**後**に生じた「デジタル利用の質・量の誤り」への是正措置である。対して日本の課題は基盤整備の**不足**という供給側の課題である。「大半の学校で必要なネットワーク帯域（速度）が確保されていない状況では、1人1台端末を有効に活用できず、ひいては、GIGAスクール構想が目指す個別最適な学びと協働的な学びの一体的な充実等が実現できない」と一次資料に記載されている [次期ICT環境整備方針WG取りまとめ [#10](#q-mext-ict-wg-10)]。「教員が使用する端末のうち、学習指導のために用いる指導者用端末については、令和４（2022）年度末の調査で、約４割の地方公共団体で教員１人１台環境が実現しておらず」と一次資料に記載されている [次期ICT環境整備方針WG取りまとめ [#12](#q-mext-ict-wg-12)]。「ICT支援員（情報通信技術支援員）について、文部科学省は...４校に１人程度を目標に掲げて配置を促進してきたものの、令和４年度末時点の配置実績は、約7,100人（約4.6校に１人）となっており、目標水準が達成されていない状況にある」と一次資料に記載されている [次期ICT環境整備方針WG取りまとめ [#13](#q-mext-ict-wg-13)]。
 
 **まとめ：北欧との単純比較は日本の実態（集中阻害率が低い・基盤整備が未完了）と噛み合わない。日本固有の課題は「使いすぎ」ではなく「基盤不足」と「使いこなしの格差」である。**
+
+### 3.4 PISA得点そのものは回帰の主因ではない
+
+> [!important] 下落幅の非対称性——回帰3カ国よりフィンランドの方が大きく落ちている
+> PISA読解力の得点推移（2006年→2022年）を見ると、回帰した3カ国の下落幅はむしろ小さい：スウェーデン507→487（−20）、デンマーク494→489（−5）、ノルウェー484→477（−7）。対してデジタル化を推進継続するフィンランドは547→490（**−57**）と、5カ国中最大の下落を記録している。「PISAが大きく落ちたから北欧はアナログへ回帰した」という単純な量的因果は、この非対称性と整合しない（PISA得点推移データは同フォルダ「北欧アナログ回帰」内のPISA得点推移バックアップファイル参照）。
+
+> [!tip] 一次資料が実際に引用する量的根拠はPISAではない
+> スウェーデンの科学的根拠は「スクリーンでの読書の負の効果は36%に及び、小学校中学年の約2年分の読書発達に相当する」というKlingberg(2023)引用にある [スウェーデン戦略案意見書 [#7](#q-se-karolinska-7)]。ノルウェーは「読解力の下降トレンド、および**PISAとPIRLSにおける最低読解力レベルの生徒の増加**」と自国の一次資料で明記しており [ノルウェースクリーン委員会報告 [#5](#q-no-skjerm-5)]、これは平均点の低下ではなく低得点層の分布拡大への言及である。デンマークに至っては一次資料内にPISAへの言及が一切なく、根拠は利用頻度・注意散漫の自己申告調査とMarieskolen校の定性的な2週間実験に限られる。
+
+> [!warning] フィンランド：最大の下落でも推進を継続する理由
+> フィンランド国家教育庁（Opetushallitus）公式見解は、得点下落の原因を「increasing socio-economic inequalities between families...lack of motivation, loss of faith in education, pull of the social media, and mental health problems」（家庭間の社会経済的不平等の増大、動機の欠如、教育への信頼喪失、ソーシャルメディアの牽引力、メンタルヘルス問題）と多元的に説明しており、デジタル化政策そのものを主因としていない [フィンランド国家教育庁公式見解 [#1](#q-oph-pisa-blog-1)]。デジタル機器使用については「the more pupils said they used digital devices, the better their competence in mathematics was, as long as they did not spend more than six hours a day on their devices」（1日6時間を超えない範囲では、デジタル機器の使用が多いほど数学の成績が良かった）という用量反応関係を量的根拠として提示している [同 [#2](#q-oph-pisa-blog-2)]。フィンランドの2027年デジタル化方針 [フィンランド・デジタル化方針2027 [#2](#q-fi-digitalisaatio-2)] は2023年4月公表であり、PISA 2022結果の公表（2023年12月）**より前**に書かれている点にも時系列上の注意が必要である。
+
+> [!note] スマホ禁止は「デジタル教育の全面撤退」ではない
+> フィンランド政府の公式発表は、携帯電話規制法の施行日を2025年8月1日としており（俗に流布する「2023年6月」は誤り）、「the use of phones or other mobile devices during lessons would be prohibited as a rule」（授業中の携帯電話・モバイル機器使用は原則禁止）としつつ、「Students would only be allowed to use their phones or other mobile devices during lessons for learning purposes or for personal healthcare reasons with permission」（学習目的または健康上の理由による許可がある場合は使用可）と明記している [フィンランド携帯電話規制法 [#1](#q-fi-gov-phoneban-1), [#2](#q-fi-gov-phoneban-2)]。規制は個人端末・娯楽利用を対象とし、教育目的のデジタル機器・カリキュラムのデジタル化（2027年方針）とは別軸で存在している——「スマホ禁止＝デジタルからアナログへの回帰」という巷の報道の一枚岩な語りは、政策原文の目的別の切り分けと一致しない。
+
+**まとめ：北欧の回帰を駆動しているのはPISA得点の経年低下そのものではなく、各国が個別に引用する査読研究・分布言及・利用実態調査である。フィンランドの継続推進も、下落の否認ではなく多元的要因分析と用量反応知見に基づく判断であり、スマホ規制とも矛盾しない。**
 
 ---
 
@@ -377,6 +424,10 @@ Gerlich, M. (2025). AI Tools in Society: Impacts on Cognitive Offloading and the
 
 ### ノルウェースクリーン委員会報告（Konsekvenser av skjerm i skolen – et kunnskapsgrunnlag fra skjermbrukutvalget）
 
+<a id="q-no-skjerm-5"></a>
+[5] "I lys av den nedadgående trenden i leseferdigheter, samt økningen av elever på laveste leseferdighetsnivå i PISA og PIRLS, er det viktig at skjermbruk i skolen ikke fortrenger lesning på papir."
+    → 論点: 読解力低下トレンドと紙での読書の重要性（PISA・PIRLS最低読解力層の増加への言及）
+
 <a id="q-no-skjerm-6"></a>
 [6] "En foreløpig konklusjon fra utvalget er at det er mye som tyder på at elevene bør lese mer på papir."
     → 論点: 生徒がもっと紙で読むべきという暫定結論
@@ -429,6 +480,26 @@ Gerlich, M. (2025). AI Tools in Society: Impacts on Cognitive Offloading and the
 [13] "ICT支援員（情報通信技術支援員）について、文部科学省は、学校の授業等における教員のICT活用をサポートする人材として、４校に１人程度を目標に掲げて配置を促進してきたものの、令和４年度末時点の配置実績は、約7,100人（約4.6校に１人）となっており、目標水準が達成されていない状況にある。"
     → 論点: ICT支援員配置の現状と課題
 
+### フィンランド国家教育庁公式見解（Finnish National Agency for Education, "PISA results reflect broader changes in Finnish society"）
+
+<a id="q-oph-pisa-blog-1"></a>
+[1] "increasing socio-economic inequalities between families, the level of resources allocated to education, polarisation in children's and young people's literacy, lack of motivation, loss of faith in education, pull of the social media, and mental health problems."
+    → 論点: PISA得点下落要因の多元的説明（デジタル化政策を主因としない）
+
+<a id="q-oph-pisa-blog-2"></a>
+[2] "In the latest PISA study, for example, the more pupils said they used digital devices, the better their competence in mathematics was, as long as they did not spend more than six hours a day on their devices."
+    → 論点: デジタル機器使用の用量反応関係（1日6時間閾値）
+
+### フィンランド携帯電話規制法（Valtioneuvosto, "Restrictions to be placed on the use of phones and mobile devices in schools"）
+
+<a id="q-fi-gov-phoneban-1"></a>
+[1] "the use of phones or other mobile devices during lessons would be prohibited as a rule"
+    → 論点: 授業中の携帯電話・モバイル機器使用の原則禁止
+
+<a id="q-fi-gov-phoneban-2"></a>
+[2] "Students would only be allowed to use their phones or other mobile devices during lessons for learning purposes or for personal healthcare reasons with permission"
+    → 論点: 学習目的・health目的での許可制利用という除外規定（施行日: 2025年8月1日）
+
 ---
 
-*出典：日豪AI教育政策比較（v3, 2026-07-12）、AI認知的オフローディング（v3, 2026-07-13）、北欧アナログ回帰（v3, 2026-07-14）の3レポートの根拠抜粋から転記*
+*出典：日豪AI教育政策比較（v3, 2026-07-12）、AI認知的オフローディング（v3, 2026-07-13）、北欧アナログ回帰（v3, 2026-07-14）の3レポートの根拠抜粋、およびフィンランド国家教育庁・フィンランド政府公式発表（2026-07-15収集）から転記*
