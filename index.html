@@ -173,6 +173,12 @@ footer.sources ol { margin: 0; padding-left: 18px; column-count: 2; column-gap: 
 footer.sources li { margin-bottom: 6px; break-inside: avoid; }
 .design-note { margin-top: 26px; font-size: 11.5px; color: var(--faint); }
 
+/* Inline citation links */
+a.cite { font-size: .72em; color: var(--accent); text-decoration: none; vertical-align: super; margin-left: 1px; font-weight: 700; }
+a.cite:hover { text-decoration: underline; }
+footer.sources li a.ev-link { margin-left: 7px; font-size: 11px; color: var(--faint); }
+footer.sources li { line-height: 1.55; overflow-wrap: break-word; word-break: break-word; }
+
 /* 根拠抜粋: details/summary */
 .evidence-block { margin-top: 40px; }
 .evidence-block > summary {
@@ -215,14 +221,14 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
 <div class="lead-grid">
   <div class="lead-text">
     <p>3本のリサーチレポート——日豪AI教育政策比較・AI認知的オフローディング・北欧アナログ回帰——を読み解くと、浮かび上がるのは1つの問いだ。「AIを導入するかどうか」ではなく、「効果を確かめながら導入する仕組みがあるかどうか」。</p>
-    <p>日本の中央教育審議会は2026年2月、AIに頼りすぎて考える力が落ちるリスク（認知的オフローディング）を公式資料に明記した。国としての問題意識は高い。しかしOECDの調査では、日本の教員でAIを使ったことがある人の割合は17%——OECD平均36%の半分にも届かない。リスクは分かっているのに、現場は動いていない。ここに大きなギャップがある。</p>
+    <p>日本の中央教育審議会は2026年2月、AIに頼りすぎて考える力が落ちるリスク（認知的オフローディング）を公式資料に明記した<a class="cite" href="#src-1">[1]</a>。国としての問題意識は高い。しかしOECDの調査では、日本の教員でAIを使ったことがある人の割合は17%——OECD平均36%の半分にも届かない<a class="cite" href="#src-2">[2]</a>。リスクは分かっているのに、現場は動いていない。ここに大きなギャップがある。</p>
   </div>
   <aside class="keyfacts">
     <h3>Key Facts</h3>
-    <div class="kf"><div class="n">17<span class="u">%</span></div><div class="l">日本の教員のAI利用率（TALIS 2024）。OECD平均36%の半分以下</div></div>
-    <div class="kf"><div class="n">12<span class="u">% vs 89%</span></div><div class="l">ChatGPTで書いた学生 vs 使わなかった学生の「自分の文章を引用できた」率</div></div>
-    <div class="kf"><div class="n">−17<span class="u">%</span></div><div class="l">AIなしで受けたテストの成績変化（練習中はAIありで+48%だった）</div></div>
-    <div class="kf"><div class="n">3<span class="u">/4カ国</span></div><div class="l">北欧で「デジタルから距離を置く」動きがあるのは3カ国のみ。フィンランドは逆に推進継続</div></div>
+    <div class="kf"><div class="n">17<span class="u">%</span></div><div class="l">日本の教員のAI利用率（TALIS 2024）。OECD平均36%の半分以下<a class="cite" href="#src-2">[2]</a></div></div>
+    <div class="kf"><div class="n">12<span class="u">% vs 89%</span></div><div class="l">ChatGPTで書いた学生 vs 使わなかった学生の「自分の文章を引用できた」率<a class="cite" href="#src-5">[5]</a></div></div>
+    <div class="kf"><div class="n">−17<span class="u">%</span></div><div class="l">AIなしで受けたテストの成績変化（練習中はAIありで+48%だった）<a class="cite" href="#src-4">[4]</a></div></div>
+    <div class="kf"><div class="n">3<span class="u">/4カ国</span></div><div class="l">北欧で「デジタルから距離を置く」動きがあるのは3カ国のみ。フィンランドは逆に推進継続<a class="cite" href="#src-14">[12]</a></div></div>
   </aside>
 </div>
 
@@ -236,20 +242,21 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
     <div class="cell">
       <h4>日本 — 現場の使い方を規律</h4>
       <ul>
-        <li><b>AIに頼りすぎるリスクを公式に認めている</b> — 中教審資料が「考える力への悪影響」を明記</li>
-        <li>「言葉にして考える力」を軸にした<b>独自の考え方</b></li>
-        <li>学年に応じた段階（小=体験 → 中=仕組みの理解 → 高=基礎知識）</li>
-        <li>学習指導要領の改訂を待たず<b>ガイドラインで先に対応</b>（Ver.2.0、2024年12月）</li>
+        <li><b>AIに頼りすぎるリスクを公式に認めている</b> — 中教審資料が「考える力への悪影響」を明記<a class="cite" href="#src-1">[1]</a></li>
+        <li>「習熟にともなって段階的に取り除かれる<b>足場かけ</b>」として再解釈<a class="cite" href="#src-3">[3]</a></li>
+        <li>学年に応じた段階（小=体験 → 中=仕組みの理解 → 高=基礎知識）<a class="cite" href="#src-1">[1]</a></li>
+        <li>学習指導要領の改訂を待たず<b>ガイドラインで先に対応</b>（Ver.2.0、2024年12月<a class="cite" href="#src-6">[6]</a>）</li>
+        <li>高校段階のプログラミング・データベース実習など<b>実践事例</b>を国レベルで収集・共有<a class="cite" href="#src-7">[7]</a></li>
         <li>AI教材そのものの基準づくりには<b>踏み込んでいない</b></li>
       </ul>
     </div>
     <div class="cell">
       <h4>オーストラリア — 製品そのものを規律</h4>
       <ul>
-        <li>ESA（教育サービス機構）が<b>AI教材の全国統一基準</b>づくりを試行中</li>
-        <li>規制の対象は先生や生徒ではなく<b>教材を作る会社</b></li>
-        <li>「良い教材とは何か」を市場のルールとして定義</li>
-        <li>判断基準は<b>学習成果が測れるかどうか</b></li>
+        <li>ESA（教育サービス機構）が<b>AI教材の全国統一基準</b>づくりを試行中<a class="cite" href="#src-9">[7]</a></li>
+        <li>規制の対象は先生や生徒ではなく<b>教材を作る会社</b><a class="cite" href="#src-9">[7]</a></li>
+        <li>EdTech開発者に対し<b>全国共通の期待値</b>を伝えるプロジェクト<a class="cite" href="#src-9">[7]</a></li>
+        <li>フレームワーク自体は「安全・倫理的・責任ある利用」の理想像を示す性格<a class="cite" href="#src-8">[6]</a></li>
         <li>「考える力への影響」という視点は日本より薄い</li>
       </ul>
     </div>
@@ -257,14 +264,14 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
 
   <blockquote class="pull">
     政策立案者の課題は、生成AIが学習の近道ではなく、<br>学習のパートナーとなることを保証すること。
-    <cite>— OECD Digital Education Outlook 2026（中教審資料所収）</cite>
+    <cite>— OECD Digital Education Outlook 2026<a class="cite" href="#src-3">[3]</a>（中教審資料所収）</cite>
   </blockquote>
 
   <figure class="chart-fig">
     <figcaption class="above">
       <span class="fig-label">Fig. 1 — Dot Plot</span>
       <span class="fig-title">教員のAI利用率：日本はOECD平均の半分以下</span>
-      <span class="fig-dek">下位中等教育の教員のうち、過去12ヶ月にAIを使用したと報告した割合（TALIS 2024）</span>
+      <span class="fig-dek">下位中等教育の教員のうち、過去12ヶ月にAIを使用したと報告した割合（TALIS 2024）<a class="cite" href="#src-2">[2]</a></span>
     </figcaption>
     <svg class="chart" viewBox="0 0 700 190" role="img" aria-label="教員AI利用率ドットプロット。日本17%、フランス16%、OECD平均36%、シンガポール75%、UAE75%">
       <line class="grid-l" x1="150" y1="18" x2="150" y2="150"/>
@@ -290,7 +297,7 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
       <circle cx="647.8" cy="122" r="6" fill="#9b9b96"/>
       <text class="val" x="560" y="126" fill="#6f6f6a">約75%</text>
     </svg>
-    <p class="fig-note"><strong>読み方:</strong> 日本の低利用は「やる気がない」からではない。AIを使っていない教員のうち、半数以上が「デジタル化の要求に圧倒されている」と回答している（クロアチア・フランドル・セルビアと並ぶ高さ）。出典: OECD TALIS 2024 / OECD DEO 2026。</p>
+    <p class="fig-note"><strong>読み方:</strong> 日本の低利用は「やる気がない」からではない。AIを使っていない教員のうち、半数以上が「デジタル化の要求に圧倒されている」と回答している（クロアチア・フランドル・セルビアと並ぶ高さ）<a class="cite" href="#src-3">[3]</a>。<strong>数値の出所に注意:</strong> 日本の正確な値「17%」はOECD TALIS 2024の国別ノート<a class="cite" href="#src-2">[2]</a>による。OECD DEO 2026本文<a class="cite" href="#src-3">[3]</a>は「シンガポール・UAEの約75%に対し、フランス・日本は20%未満」という概数のみを記載しており、17%という桁までは示していない。</p>
   </figure>
 </section>
 
@@ -305,7 +312,7 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
     <figcaption class="above">
       <span class="fig-label">Fig. 2 — Dumbbell / Slope</span>
       <span class="fig-title">トルコの実験：練習中の伸びが、テストで逆転する</span>
-      <span class="fig-dek">高校生約1,000人。GPT-4を使って練習 → AIなしでテストした時の成績変化（対照群との比較）</span>
+      <span class="fig-dek">高校生約1,000人。GPT-4を使って練習 → AIなしでテストした時の成績変化（対照群との比較）<a class="cite" href="#src-4">[4]</a></span>
     </figcaption>
     <svg class="chart" viewBox="0 0 700 240" role="img" aria-label="GPT-4利用の練習時成績とテスト時成績のスロープチャート。GPT Base練習+48%がテスト-17%に反転、GPT Tutor練習+127%がテスト0%に">
       <line class="grid-l" x1="120" y1="62.3" x2="560" y2="62.3"/>
@@ -331,14 +338,14 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
       <text class="val acc" x="516" y="166">±0%</text>
       <text class="cat" x="300" y="86" fill="#1a4d8f" font-weight="700">GPT Tutor（学習支援設計）</text>
     </svg>
-    <p class="fig-note"><strong>意味:</strong> 「素のAI」に答えを聞くだけだと、自力でやる力が落ちる（−17%）。ヒントだけ出す設計のAIなら、少なくとも害はない（±0%）——ただし得もしない。AIをどう設計するかで結果が変わる。出典: Bastani et al., PNAS 2024 / OECD DEO 2026。</p>
+    <p class="fig-note"><strong>意味:</strong> 「素のAI」に答えを聞くだけだと、自力でやる力が落ちる（−17%）。ヒントだけ出す設計のAIなら、少なくとも害はない（±0%）——ただし得もしない。AIをどう設計するかで結果が変わる。出典: Bastani et al., PNAS 2024<a class="cite" href="#src-4">[4]</a> / OECD DEO 2026<a class="cite" href="#src-3">[3]</a>。</p>
   </figure>
 
   <figure class="chart-fig">
     <figcaption class="above">
       <span class="fig-label">Fig. 3 — Paired Comparison</span>
       <span class="fig-title">「書いた本人が引用できない」——記憶への影響</span>
-      <span class="fig-dek">エッセイを書いた1時間以内に、自分の文章を引用できた学生の割合（5大学・3条件比較）</span>
+      <span class="fig-dek">エッセイを書いた1時間以内に、自分の文章を引用できた学生の割合（5大学・3条件比較）<a class="cite" href="#src-5">[5]</a></span>
     </figcaption>
     <svg class="chart" viewBox="0 0 700 150" role="img" aria-label="想起率比較。脳のみ・検索エンジン群89%、ChatGPT群12%">
       <text class="cat" x="15" y="40">脳のみ / 検索エンジン</text>
@@ -352,12 +359,12 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
       <text class="axis" x="415" y="118" text-anchor="middle">50%</text>
       <text class="axis" x="680" y="118" text-anchor="middle">100%</text>
     </svg>
-    <p class="fig-note">脳の画像を見ると、AIを使ったグループは「自分で考える」作業から「AIの答えを確認するだけ」の作業に切り替わっていた（Kosmyna et al. 2025）。</p>
+    <p class="fig-note">脳の画像を見ると、AIを使ったグループは「自分で考える」作業から「AIの答えを確認するだけ」の作業に切り替わっていた（Kosmyna et al. 2025<a class="cite" href="#src-5">[5]</a>）。</p>
   </figure>
 
   <blockquote class="pull">
     AIを使うとテストの点は上がるが、<br>自分の理解度を正しく把握する力（メタ認知）は逆に下がる。
-    <cite>— Fernandes et al. (2026), Computers in Human Behavior（中教審資料所収）</cite>
+    <cite>— Fernandes et al. (2026), Computers in Human Behavior（中教審資料所収<a class="cite" href="#src-1">[1]</a>）</cite>
   </blockquote>
 
   <p>日本の対応で特徴的なのは、こうした国際的な研究結果を「AIの使わせ方」の工夫として受け止めている点だ。途中の考え方を評価する、AIの答えをそのまま提出させない、学年ごとに段階を踏む——どれも「使い方」のルールであり、オーストラリアの「作り方」のルール（製品基準）とは補い合う関係にある。</p>
@@ -372,10 +379,10 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
   <table class="stance">
     <thead><tr><th>国</th><th>方針</th><th>具体的な措置</th></tr></thead>
     <tbody>
-      <tr><td>スウェーデン</td><td><span class="tag rev">包括的回帰</span></td><td>幼稚園のデジタル義務を撤廃（Lpfö 18改訂2025）。2歳未満はアナログ限定。携帯電話を終日回収する法案を2026年3月に閣議決定</td></tr>
-      <tr><td>デンマーク</td><td><span class="tag rev">具体的制限</span></td><td>全学年でモバイルフリーを勧告。学校の2週間スクリーンなし実験からアナログ拡大を決定</td></tr>
-      <tr><td>ノルウェー</td><td><span class="tag rev">慎重な使い分け</span></td><td>スクリーン委員会「生徒はもっと紙で読むべき」（暫定結論）。全面回帰でなく使い分けの精緻化</td></tr>
-      <tr><td>フィンランド</td><td><span class="tag fwd">推進継続</span></td><td>「2027年までにデジタル化の世界的リーダーへ」。コロナ禍の遠隔教育を成功体験として継続活用</td></tr>
+      <tr><td>スウェーデン</td><td><span class="tag rev">包括的回帰</span></td><td>幼稚園のデジタル義務を撤廃（Lpfö 18改訂2025）<a class="cite" href="#src-10">[8]</a>。2歳未満はアナログ限定<a class="cite" href="#src-10">[8]</a>。携帯電話の終日回収を義務化する法案を2026年3月に政府決定<a class="cite" href="#src-11">[9]</a></td></tr>
+      <tr><td>デンマーク</td><td><span class="tag rev">具体的制限</span></td><td>全学年でモバイルフリーを勧告<a class="cite" href="#src-12">[10]</a>。学校の2週間スクリーンなし実験からアナログ拡大を決定<a class="cite" href="#src-12">[10]</a></td></tr>
+      <tr><td>ノルウェー</td><td><span class="tag rev">慎重な使い分け</span></td><td>スクリーン委員会「生徒はもっと紙で読むべき」（暫定結論）<a class="cite" href="#src-13">[11]</a>。全面回帰でなく使い分けの精緻化</td></tr>
+      <tr><td>フィンランド</td><td><span class="tag fwd">推進継続</span></td><td>「2027年までにデジタル化の世界的リーダーへ」<a class="cite" href="#src-14">[12]</a>。コロナ禍の遠隔教育を成功体験として継続活用<a class="cite" href="#src-14">[12]</a></td></tr>
     </tbody>
   </table>
 
@@ -383,7 +390,7 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
     <figcaption class="above">
       <span class="fig-label">Fig. 4 — Slope（経年比較）</span>
       <span class="fig-title">PISA読解力の下落は「そこまで大きくない」——回帰3カ国とフィンランドの差</span>
-      <span class="fig-dek">読解力の平均点、2006年 → 2022年（OECD公式値、複数の二次資料で照合済み）</span>
+      <span class="fig-dek">読解力の平均点、2006年 → 2022年（OECD公式値、複数の二次資料で照合済み）<a class="cite" href="#src-15">[13]</a></span>
     </figcaption>
     <svg class="chart" viewBox="0 0 700 250" role="img" aria-label="PISA読解力スロープチャート2006年から2022年。フィンランド547から490（-57）、スウェーデン507から487（-20）、ノルウェー484から477（-7）、デンマーク494から489（-5）、日本498から516（+18）">
       <line class="grid-l" x1="150" y1="47" x2="540" y2="47"/>
@@ -415,27 +422,27 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
       <text class="val acc" x="556" y="101">516　日本</text>
       <text class="val acc" x="134" y="139" text-anchor="end">498</text>
     </svg>
-    <p class="fig-note"><strong>読み方:</strong> 回帰した3カ国（スウェーデン−20点・デンマーク−5点・ノルウェー−7点）の下がり方は、実はそこまで大きくない。むしろデジタル化を続けているフィンランドの方が<strong>−57点</strong>と、5カ国の中で一番大きく下がっている。「点数が落ちたから北欧はアナログに戻った」という単純な話は、この数字と噛み合わない。出典: Wikipedia・factsmaps.com・theglobaleconomy.comの集計値（2026-07-15収集、OECD公式データベースでの裏取りを推奨）。</p>
+    <p class="fig-note"><strong>読み方:</strong> 回帰した3カ国（スウェーデン−20点・デンマーク−5点・ノルウェー−7点）の下がり方は、実はそこまで大きくない。むしろデジタル化を続けているフィンランドの方が<strong>−57点</strong>と、5カ国の中で一番大きく下がっている。「点数が落ちたから北欧はアナログに戻った」という単純な話は、この数字と噛み合わない。出典: Wikipedia・factsmaps.com・theglobaleconomy.comの集計値<a class="cite" href="#src-15">[13]</a>（2026-07-15収集、二次資料の集計値であり、OECD公式データベースPISA in Focusでの裏取りを推奨）。</p>
   </figure>
 
-  <p>実際に各国の資料を読むと、「回帰」の根拠として直接使われているのはPISAの点数そのものではない。スウェーデンが根拠にしているのは、カロリンスカ研究所（医学・脳科学で有名な大学）がまとめた研究レビュー——Klingberg(2023)の「スクリーン読書は読解力を36%下げる」という研究、Mueller & Oppenheimer(2014)の「手書きの方が学習効果が高い」という研究など。ノルウェーは「PISA・PIRLSで最も読解力が低い層の生徒が増えている」という<b>分布の変化</b>を根拠にしている（平均点の話ではない）。デンマークにいたっては、資料の中にPISAへの言及が一つも無い——根拠は生徒への利用実態アンケートと、1つの学校の2週間の実験だけだ。</p>
+  <p>実際に各国の資料を読むと、「回帰」の根拠として直接使われているのはPISAの点数そのものではない。スウェーデンが根拠にしているのは、カロリンスカ研究所（医学・脳科学で有名な大学）がまとめた研究レビュー<a class="cite" href="#src-16">[14]</a>——Klingberg(2023)の「スクリーン読書は読解力を36%下げる」という研究、Mueller & Oppenheimer(2014)の「手書きの方が学習効果が高い」という研究など<a class="cite" href="#src-16">[14]</a>。日本国内でも東京大学の研究グループが、紙の手帳を使った場合はスマートフォンなど電子機器を使った場合に比べ、記憶の想起に関わる脳活動が定量的に高くなることを報告している<a class="cite" href="#src-17">[15]</a>。ノルウェーは「PISA・PIRLSで最も読解力が低い層の生徒が増えている」という<b>分布の変化</b>を根拠にしている（平均点の話ではない）<a class="cite" href="#src-13">[11]</a>。デンマークにいたっては、資料の中にPISAへの言及が一つも無い——根拠は生徒への利用実態アンケートと、1つの学校の2週間の実験だけだ<a class="cite" href="#src-12">[10]</a>。</p>
 
   <div class="contrast">
     <div class="cell">
       <h4>フィンランド — なぜ一番下がっても続けるのか</h4>
       <ul>
-        <li>フィンランド国家教育庁（Opetushallitus）の公式見解は、下落の原因を<b>一つに絞らない</b>——家庭間の経済格差、勉強への意欲低下、コロナ後のウクライナ戦争による心理的な影響、SNS、メンタルヘルスの問題</li>
-        <li>「1日6時間を超えなければ、デジタル機器を多く使う生徒ほど数学の成績が良かった」というデータを、デジタル化を続ける<b>理由</b>として挙げている</li>
-        <li>フィンランドの「2027年までにデジタル化を進める」という方針は<b>2023年4月</b>発表——PISA 2022の結果が出た<b>2023年12月より前</b>に書かれたもの。「下落を知った上で続けている」わけではない点に注意</li>
+        <li>フィンランド国家教育庁（Opetushallitus）の公式見解は、下落の原因を<b>一つに絞らない</b>——家庭間の経済格差、勉強への意欲低下、コロナ後のウクライナ戦争による心理的な影響、SNS、メンタルヘルスの問題<a class="cite" href="#src-18">[16]</a></li>
+        <li>「1日6時間を超えなければ、デジタル機器を多く使う生徒ほど数学の成績が良かった」というデータを、デジタル化を続ける<b>理由</b>として挙げている<a class="cite" href="#src-18">[16]</a></li>
+        <li>フィンランドの「2027年までにデジタル化を進める」という方針は<b>2023年4月</b>発表<a class="cite" href="#src-14">[12]</a>——PISA 2022の結果が出た<b>2023年12月より前</b>に書かれたもの。「下落を知った上で続けている」わけではない点に注意</li>
       </ul>
     </div>
     <div class="cell">
       <h4>スマホ禁止は「デジタル教育をやめる」ことではない</h4>
       <ul>
-        <li>フィンランドの携帯電話規制法は<b>2025年8月1日</b>施行（ネット記事に出回る「2023年6月」は誤り）</li>
-        <li>「授業中の携帯電話は原則禁止」としつつ、<b>学習目的なら先生の許可があれば使ってよい</b>という例外つき</li>
-        <li>禁止しているのは<b>個人のスマホ・娯楽利用</b>。<b>教育目的のデジタル機器・カリキュラム</b>（2027年方針）とは別の話</li>
-        <li>スウェーデンの携帯電話回収も幼稚園でのデジタル義務撤廃も同じ構造——義務や娯楽利用を止めるのであって、学校のICT投資自体をやめるわけではない</li>
+        <li>フィンランドの携帯電話規制法は<b>2025年8月1日</b>施行（ネット記事に出回る「2023年6月」は誤り）<a class="cite" href="#src-19">[17]</a></li>
+        <li>「授業中の携帯電話は原則禁止」としつつ、<b>学習目的なら先生の許可があれば使ってよい</b>という例外つき<a class="cite" href="#src-19">[17]</a></li>
+        <li>禁止しているのは<b>個人のスマホ・娯楽利用</b>。<b>教育目的のデジタル機器・カリキュラム</b>（2027年方針<a class="cite" href="#src-14">[12]</a>）とは別の話</li>
+        <li>スウェーデンの携帯電話回収<a class="cite" href="#src-11">[9]</a>も幼稚園でのデジタル義務撤廃<a class="cite" href="#src-10">[8]</a>も同じ構造——義務や娯楽利用を止めるのであって、学校のICT投資自体をやめるわけではない</li>
       </ul>
     </div>
   </div>
@@ -444,7 +451,7 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
     <figcaption class="above">
       <span class="fig-label">Fig. 5 — Dot Plot（単一指標）</span>
       <span class="fig-title">授業中の集中阻害：日本は北欧が抱える問題を、まだ抱えていない</span>
-      <span class="fig-dek">数学授業で「他の生徒のデバイス使用」により注意が散漫になった生徒の割合（PISA 2022・同一指標のみ比較）</span>
+      <span class="fig-dek">数学授業で「他の生徒のデバイス使用」により注意が散漫になった生徒の割合（PISA 2022・同一指標のみ比較）<a class="cite" href="#src-20">[18]</a></span>
     </figcaption>
     <svg class="chart" viewBox="0 0 700 160" role="img" aria-label="集中阻害率ドットプロット。日本18%、韓国32%、OECD平均59%">
       <line class="grid-l" x1="282.5" y1="14" x2="282.5" y2="118"/>
@@ -465,10 +472,10 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
       <circle cx="540.9" cy="94" r="6" fill="#111111"/>
       <text class="val" x="556" y="98">59%</text>
     </svg>
-    <p class="fig-note"><strong>指標の混同に注意:</strong> デンマークの「72%」は集中を乱された割合ではなく<strong>利用頻度</strong>（ほぼ毎時間デジタル機器を使う生徒の割合、OECD平均16%）。違う指標を同じグラフに混ぜていない——本図は「他の生徒のデバイスによる注意散漫」に統一。出典: PISA 2022 / OECD 2024。</p>
+    <p class="fig-note"><strong>指標の混同に注意:</strong> デンマークの「72%」は集中を乱された割合ではなく<strong>利用頻度</strong>（ほぼ毎時間デジタル機器を使う生徒の割合、OECD平均16%）<a class="cite" href="#src-12">[10]</a>。違う指標を同じグラフに混ぜていない——本図は「他の生徒のデバイスによる注意散漫」に統一。出典: PISA 2022<a class="cite" href="#src-21">[19]</a> / OECD 2024<a class="cite" href="#src-20">[18]</a>。</p>
   </figure>
 
-  <p>回帰3カ国に共通するのは、1人1台環境が<b>定着した後</b>に生じた「使い方の質・量の誤り」への是正だ。一方でフィンランドの推進継続が示すのは、回帰が「北欧的な価値観」ではなく<b>各国それぞれの実装の歴史への個別対応</b>だという事実である。</p>
+  <p>回帰3カ国に共通するのは、1人1台環境が<b>定着した後</b>に生じた「使い方の質・量の誤り」への是正だ。一方でフィンランドの推進継続が示すのは、回帰が「北欧的な価値観」ではなく<b>各国それぞれの実装の歴史への個別対応</b>だという事実である<a class="cite" href="#src-14">[12]</a>。</p>
 </section>
 
 <!-- ============ Section IV ============ -->
@@ -481,7 +488,7 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
     <figcaption class="above">
       <span class="fig-label">Fig. 6 — Slope（2時点変化）</span>
       <span class="fig-title">GIGAスクール5年の到達点：機材は揃った、運用が残った</span>
-      <span class="fig-dek">学校ICT環境の主要指標、2019年3月 → 2024年3月（文部科学省確定値）</span>
+      <span class="fig-dek">学校ICT環境の主要指標、2019年3月 → 2024年3月（文部科学省確定値）<a class="cite" href="#src-22">[20]</a></span>
     </figcaption>
     <svg class="chart" viewBox="0 0 700 250" role="img" aria-label="ICT整備状況スロープチャート。無線LAN41.0%→96.2%、大型提示装置52.2%→89.6%、校務支援システム57.5%→91.4%、端末0.2台→1.1台">
       <line class="grid-l" x1="150" y1="30" x2="540" y2="30"/>
@@ -505,14 +512,14 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
       <text class="val" x="556" y="76">89.6%　大型提示装置</text>
       <text class="val" x="134" y="118" text-anchor="end">52.2%</text>
     </svg>
-    <p class="fig-note"><strong>裏側:</strong> 推奨の通信速度を満たす学校は<strong>約2割</strong>、先生用の端末が1人1台になっていない自治体が<strong>約4割</strong>、ICT支援員は目標（4校に1人）に対し実績4.6校に1人。端末は0.2台→1.1台に増え「1人1台」は達成——でも回線と人手が追いついていない。出典: 文科省 令和6年3月確定値 / ICT環境整備WG取りまとめ。</p>
+    <p class="fig-note"><strong>裏側:</strong> 推奨の通信速度を満たす学校は<strong>約2割</strong>、先生用の端末が1人1台になっていない自治体が<strong>約4割</strong>、ICT支援員は目標（4校に1人）に対し実績4.6校に1人<a class="cite" href="#src-23">[21]</a>。端末は0.2台→1.1台に増え「1人1台」は達成——でも回線と人手が追いついていない。出典: 文科省 令和6年3月確定値<a class="cite" href="#src-22">[20]</a> / ICT環境整備WG取りまとめ<a class="cite" href="#src-23">[21]</a>。</p>
   </figure>
 
   <figure class="chart-fig">
     <figcaption class="above">
       <span class="fig-label">Fig. 7 — Range Plot（調査間ばらつき）</span>
       <span class="fig-title">生徒側はすでに「AIネイティブ」：利用率は調査によって幅がある</span>
-      <span class="fig-dek">生成AI利用経験率の調査間レンジ（2024–2025、民間・公的調査の最小〜最大）</span>
+      <span class="fig-dek">生成AI利用経験率の調査間レンジ（2024–2025、民間・公的調査の最小〜最大）<a class="cite" href="#src-24">[22]</a></span>
     </figcaption>
     <svg class="chart" viewBox="0 0 700 150" role="img" aria-label="生成AI利用率レンジプロット。高校生73.7%から92.5%、大学生44.7%から86.3%">
       <line class="grid-l" x1="282.5" y1="14" x2="282.5" y2="108"/>
@@ -533,7 +540,7 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
       <text class="val" x="378" y="66" fill="#6f6f6a">44.7%</text>
       <text class="val" x="588" y="66" fill="#6f6f6a">86.3%</text>
     </svg>
-    <p class="fig-note"><strong>読み方:</strong> この幅の広さ自体が大事な情報——調査によって「使ったことがある」の定義（会話型AIだけか、生成AI全般か）や対象者が違うため、20〜40ポイントもずれる。「利用率◯%」と1つの数字だけで語るのは危うい。使う目的の6〜7割は「勉強・課題」。出典: 学研 / CyberAgent / 進学ネット / 総務省情報通信白書 2024–2025。</p>
+    <p class="fig-note"><strong>読み方:</strong> この幅の広さ自体が大事な情報——調査によって「使ったことがある」の定義（会話型AIだけか、生成AI全般か）や対象者が違うため、20〜40ポイントもずれる。「利用率◯%」と1つの数字だけで語るのは危うい。使う目的の6〜7割は「勉強・課題」。出典: 学研 / CyberAgent / 進学ネット / 総務省情報通信白書 2024–2025<a class="cite" href="#src-24">[22]</a>。</p>
   </figure>
 
   <blockquote class="pull">
@@ -566,131 +573,186 @@ footer.sources li { margin-bottom: 6px; break-inside: avoid; }
 <!-- ============ Sources ============ -->
 <footer class="sources">
   <h3>Sources</h3>
-  <p style="margin:0 0 12px;">数値は各一次資料・調査の記載値をそのまま使用。異なる調査間の指標は同一チャートに混在させていない。</p>
+  <p style="margin:0 0 12px;">数値は各一次資料・調査の記載値をそのまま使用。異なる調査間の指標は同一チャートに混在させていない。番号は本文中の引用番号<a class="cite" href="#src-1">[N]</a>と一致し、下記「根拠抜粋」の同番号グループに逐語引用を収録（引用可能な逐語抜粋がない統計・二次集計は「根拠抜粋なし」と明記）。書式は組織著者のAPA第7版に準拠。</p>
   <ol>
-    <li>文部科学省 中央教育審議会 情報・技術WG 資料2-3「AIに関する現状と検討課題について」(2026-02)</li>
-    <li>OECD, <i>Digital Education Outlook 2026: Navigating the Generative AI Frontier</i> (2026-01)</li>
-    <li>OECD, <i>Results from TALIS 2024</i> — Country Notes: Japan</li>
-    <li>Bastani et al., "Generative AI Can Harm Learning," <i>PNAS</i> (2024)</li>
-    <li>Kosmyna et al., "Your Brain on ChatGPT" (2025)</li>
-    <li>Skolverket, <i>Läroplan för förskolan – Lpfö 18, reviderad 2025</i></li>
-    <li>Regeringen, <i>Sverige – Ett läsande land: En lässtrategi 2026–2031</i></li>
-    <li>Styrelsen for Undervisning og Kvalitet, <i>Skærmbrug i grundskolen</i> (2024-02)</li>
-    <li>Kunnskapsdepartementet, <i>Konsekvenser av skjerm i skolen</i> (2023-12)</li>
-    <li>OKM, <i>Kasvatuksen ja koulutuksen digitalisaation linjaukset 2027</i> (2023)</li>
-    <li>OECD, <i>Students, digital devices and success</i> / PISA 2022 (2024-05)</li>
-    <li>文部科学省「学校における教育の情報化の実態等に関する調査」令和6年3月確定値</li>
-    <li>学研 / CyberAgent / 進学ネット / 総務省情報通信白書 (2024–2025)</li>
-    <li>Australian Framework for Generative AI in Schools (2023) / 2024 Review</li>
-    <li>Karolinska Institutet, <i>Beslut om yttrande över förslag till nationell digitaliseringsstrategi för skolväsendet 2023–2027</i> (2023-04)</li>
-    <li>Finnish National Agency for Education (Opetushallitus), "PISA results reflect broader changes in Finnish society" (blog, 2024)</li>
-    <li>Valtioneuvosto (フィンランド政府), "Restrictions to be placed on the use of phones and mobile devices in schools" (施行: 2025-08-01)</li>
-    <li>Wikipedia, "Programme for International Student Assessment" / "(2000 to 2012)" — PISA読解力2006-2022の得点系列</li>
+    <li id="src-1">文部科学省 中央教育審議会初等中等教育分科会教育課程部会 情報・技術ワーキンググループ. (2026, February 13). <i>AIに関する現状と検討課題について</i>（第6回資料2-3）. https://www.mext.go.jp/content/20260213-mxt_kyoiku01-00004732__06.pdf <a class="ev-link" href="#ev-1">→ 根拠</a></li>
+    <li id="src-2">OECD. (2025, October). <i>Results from TALIS 2024: Country Notes — Japan</i>. https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/10/results-from-talis-2024-country-notes_eafd703e/japan_4e66c75b/b48b1dd7-en.pdf <a class="ev-link" href="#ev-2">→ 根拠（データ、逐語引用なし）</a></li>
+    <li id="src-3">OECD. (2026, January 19). <i>Digital Education Outlook 2026: Navigating the Generative AI Frontier</i>. https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/01/oecd-digital-education-outlook-2026_940e0dd8/062a7394-en.pdf <a class="ev-link" href="#ev-3">→ 根拠</a></li>
+    <li id="src-4">Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakcı, Ö., &amp; Mariman, R. (2024). Generative AI can harm learning. <i>PNAS</i>. 本レポートでは独自に一次確認しておらず、出典3（OECD, 2026）による引用を通じて参照。 <a class="ev-link" href="#ev-3">→ 根拠（出典3内）</a></li>
+    <li id="src-5">Kosmyna, N. et al. (2025). Your brain on ChatGPT. 本レポートでは独自に一次確認しておらず、出典3（OECD, 2026）による引用を通じて参照。 <a class="ev-link" href="#ev-3">→ 根拠（出典3内）</a></li>
+    <li id="src-6">文部科学省初等中等教育局. (2024, December 26). <i>初等中等教育段階における生成AIの利活用に関するガイドライン Ver.2.0</i>. https://www.mext.go.jp/content/20241226-mxt_shuukyo02-000030823_001.pdf <a class="ev-link" href="#ev-6">→ 根拠</a></li>
+    <li id="src-7">文部科学省初等中等教育局学校情報基盤・教材課. (2025, October 6). <i>学校現場における生成AIの利活用〜ガイドラインとその実践例〜</i>. https://www.mext.go.jp/content/20251006-mext_kyoiku01-000042806_07.pdf <a class="ev-link" href="#ev-7">→ 根拠</a></li>
+    <li id="src-8">Department of Education, Australian Government (Education Ministers). (2023, October 5). <i>Australian Framework for Generative Artificial Intelligence (AI) in Schools</i>. https://www.education.gov.au/download/17416/australian-framework-generative-artificial-intelligence-ai-schools/35400/document/pdf <a class="ev-link" href="#ev-8">→ 根拠</a></li>
+    <li id="src-9">National AI in Schools Taskforce; Department of Education, Australian Government. (2025, June). <i>2024 Review of the Australian Framework for Generative Artificial Intelligence in Schools</i>. https://www.education.gov.au/download/17416/australian-framework-generative-artificial-intelligence-ai-schools/41436/2024-review-australian-framework-generative-ai-schools/pdf <a class="ev-link" href="#ev-9">→ 根拠</a></li>
+    <li id="src-10">Skolverket. (2025, July 1). <i>Läroplan för förskolan – Lpfö 18, reviderad 2025</i>. https://www.skolverket.se/download/18.2cd92ed197a1b2bbcd5ddc3/1752152711498/pdf13295.pdf <a class="ev-link" href="#ev-10">→ 根拠</a></li>
+    <li id="src-11">Regeringen; Kulturdepartementet. (2026, April). <i>Sverige – Ett läsande land: En lässtrategi för Sverige 2026–2031</i>. https://www.regeringen.se/contentassets/a4a4a89a79e04708abf4c46056dd3aca/sverige--ett-lasande-land-en-lasstrategi-for-sverige-20262031.pdf <a class="ev-link" href="#ev-11">→ 根拠</a></li>
+    <li id="src-12">Styrelsen for Undervisning og Kvalitet. (2024, February). <i>Skærmbrug i grundskolen</i>. https://uvm.dk/media/0zfnyiyy/240205anbefalinger-grundskole-final.pdf <a class="ev-link" href="#ev-12">→ 根拠</a></li>
+    <li id="src-13">Kunnskapsdepartementet (skjermbrukutvalget). (2023, December). <i>Konsekvenser av skjerm i skolen – et kunnskapsgrunnlag fra skjermbrukutvalget</i>. https://files.nettsteder.regjeringen.no/wpuploads01/sites/546/2023/12/Konsekvenser-av-skjerm-i-skole-endelig.pdf <a class="ev-link" href="#ev-13">→ 根拠</a></li>
+    <li id="src-14">Opetus- ja kulttuuriministeriö (OKM). (2023, April 14). <i>Kasvatuksen ja koulutuksen digitalisaation linjaukset 2027</i>. https://peda.net/yhdistykset/aikuislukioliitto/materiaalia/valtioneuvoston-koulutuspoliittinen-selonteko-2021-2422/kasvatuksen-ja-koulutuksen-digitalisaation-linjaukset-2027-o:file/download <a class="ev-link" href="#ev-14">→ 根拠</a></li>
+    <li id="src-15">Wikipedia contributors; factsmaps.com; theglobaleconomy.com. <i>PISA読解力平均点の国別推移（2006–2022、二次集計）</i>. 取得日: 2026年7月15日. OECD公式データベースでの裏取り未実施につき参考値。 <a class="ev-link" href="#ev-15">→ 根拠（データ、逐語引用なし）</a></li>
+    <li id="src-16">Karolinska Institutet. (2023, April 28). <i>Beslut om yttrande över förslag till nationell digitaliseringsstrategi för skolväsendet 2023–2027</i>. https://www.regeringen.se/contentassets/d818e658071b49cbb1a75a6b11fa725d/karolinskainstitutet.pdf <a class="ev-link" href="#ev-16">→ 根拠</a></li>
+    <li id="src-17">東京大学大学院総合文化研究科 酒井邦嘉研究室. (2021, March 19). <i>紙の手帳の脳科学的効用について ～使用するメディアによって記憶力や脳活動に差～</i>. 東京大学. https://www.c.u-tokyo.ac.jp/info/news/topics/files/20210319sakaikunisobun01.pdf <a class="ev-link" href="#ev-17">→ 根拠</a></li>
+    <li id="src-18">Finnish National Agency for Education (Opetushallitus). (2024). <i>PISA results reflect broader changes in Finnish society</i> [Blog post]. https://www.oph.fi/en/blog/pisa-results-reflect-broader-changes-finnish-society <a class="ev-link" href="#ev-18">→ 根拠</a></li>
+    <li id="src-19">Valtioneuvosto (Finnish Government). (2025). <i>Restrictions to be placed on the use of phones and mobile devices in schools</i>（施行日: 2025年8月1日）. https://valtioneuvosto.fi/en/-/1410845/restrictions-to-be-placed-on-the-use-of-phones-and-mobile-devices-in-schools <a class="ev-link" href="#ev-19">→ 根拠</a></li>
+    <li id="src-20">OECD. (2024, May). <i>Managing screen time: How to protect and equip students against distraction</i> (PISA in Focus No. 124). https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/05/managing-screen-time_023f2390/7c225af4-en.pdf <a class="ev-link" href="#ev-20">→ 根拠</a></li>
+    <li id="src-21">OECD Directorate for Education and Skills. (2024, May). <i>Students, digital devices and success</i>. https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/05/students-digital-devices-and-success_621829ff/9e4c0624-en.pdf <a class="ev-link" href="#ev-21">→ 根拠（データ、逐語引用なし）</a></li>
+    <li id="src-22">文部科学省. (2024, March). <i>学校における教育の情報化の実態等に関する調査</i>（令和6年3月確定値）. URL未収集（vault内一次資料に記載なし・要検証）。 根拠抜粋なし（統計表からの直接転記）</li>
+    <li id="src-23">文部科学省中央教育審議会初等中等教育分科会デジタル学習基盤特別委員会. (2024, July). <i>次期ICT環境整備方針の在り方ワーキンググループ 取りまとめ</i>. https://www.mext.go.jp/content/20240805-mxt_jogai02-000037400_01.pdf <a class="ev-link" href="#ev-23">→ 根拠</a></li>
+    <li id="src-24">学研教育総合研究所; CyberAgent; 進学ネット; 総務省. (2024–2025). <i>生成AI利用率に関する各種調査（複合統計）</i>. 総務省分は情報通信白書 https://www.soumu.go.jp/johotsusintokei/whitepaper/ 参照。個別調査のURLは本レポートでは未収集。 根拠抜粋なし（複数調査の集計レンジ）</li>
   </ol>
   <p class="design-note">様式: Editorial Grid / Magazine（ui-ux-pro-max）・Academic/Research書体ペア（Crimson Pro × Atkinson Hyperlegible）。元となる統合レポート.md（質的統合・全文引用付き）は同フォルダに原文のまま保存。本ページはその平易版であり、詳細な一次資料の原文引用は下記「根拠抜粋」に格納。</p>
 </footer>
 
 <!-- ============ 根拠抜粋（折りたたみ） ============ -->
 <details class="evidence-block">
-  <summary>詳細：一次資料からの引用（全15資料）</summary>
+  <summary>詳細：一次資料からの引用（全24資料、Sources欄と同一番号）</summary>
 
-  <div class="evidence-group">
-    <h4>文部科学省ガイドラインVer.2.0</h4>
+  <div class="evidence-group" id="ev-1">
+    <h4><a class="cite" href="#src-1">[1]</a> 文部科学省 中教審資料2-3「AIに関する現状と検討課題について」</h4>
+    <p class="q-item"><span class="orig">「AIツールの使用と批判的思考スキルの関係を調査し、認知的オフローディング（認知負荷の外部化）が媒介要因として機能するかに焦点を当てた研究。AIツールの頻繁な使用と批判的思考能力との間に有意な負の相関があり、若年層はAIツールへの依存度が高く、批判的思考スコアが低い傾向。」（Gerlich, M. 2025, Societies, 15(1), 6）</span><span class="topic">論点: 認知的オフローディングと批判的思考スキルの負の相関</span></p>
+    <p class="q-item"><span class="orig">「小学校段階においては、まず、「②適切な取扱い」「③特性の理解」を学んだ上で、「①活用」を通した体験的な学びを深める方向性が示されている。中学校段階では、各要素の内容を深めつつ、抽象的・科学的な理解を必要とする「③特性の理解」を身に付けることを一層重視する方向性が示されている。高等学校段階では、高等教育段階での数理・データサイエンス・AI教育の動向とも連動し、文理を問わず生成AI時代に不可欠な基礎的な素養である「③特性の理解」を身に付ける方向性が示されている。」</span><span class="topic">論点: 小中高でのAI特性と適切な取扱いの学習方針</span></p>
+    <p class="q-item"><span class="orig">（逐語引用ではなく要約）生成AIの利用が論理的課題における成績と自己評価（メタ認知的判断）に与える影響を大規模実験で検証。AIは成績を向上させる一方、自己評価の過大化を招きメタ認知の正確性を低下させることが示された（Fernandes et al. 2026, "AI makes you smarter but none the wiser: The disconnect between performance and metacognition," Computers in Human Behavior、中教審資料2-3所収）。</span><span class="topic">論点: メタ認知の正確性低下（Fig.2/2つ目のpull-quoteの根拠）</span></p>
+  </div>
+
+  <div class="evidence-group" id="ev-2">
+    <h4><a class="cite" href="#src-2">[2]</a> OECD, TALIS 2024 Country Notes: Japan</h4>
+    <p class="q-item"><span class="orig">（逐語引用なし・統計データ）下位中等教育の教員のうちAIを職務で使用したと報告した割合: 日本17%、OECD平均36%、フランス14–19%、シンガポール・UAE約75%。</span><span class="topic">論点: Fig.1（教員AI利用率）の日本の正確な数値の出所</span></p>
+  </div>
+
+  <div class="evidence-group" id="ev-3">
+    <h4><a class="cite" href="#src-3">[3]</a> OECD Digital Education Outlook 2026</h4>
+    <p class="q-item"><span class="orig">"Another study compared differences between students who revised essays by asking for human advice or used a general-purpose LLM (Chen et al., 2025). ...when interacting with a general-purpose chatbot, some students tended to ask directly for help and implement immediately the solution received. They would often skip the diagnosis, evaluation and iteration stages. The authors refer to this as 'metacognitive laziness', a way of describing 'cognitive offloading'."</span><span class="topic">論点: 一般用途LLMがメタ認知の怠惰・認知的オフローディングを引き起こす研究</span></p>
+    <p class="q-item"><span class="orig">"In the United States, students from 5 universities were asked to write a 20-minute essay under three working conditions: writing by themselves ('brain-only'), with a search engine, or with a general-purpose GenAI tool (ChatGPT). Afterwards, within one hour of the actual essay writing, only 12% of the LLM group could quote something from their essay (exact recall) as opposed to 89% in the two other groups. ...Brain imagery suggested a shift in their executive tasks from generating content to supervising the AI-generative content, with lower neural connectivity and involvement."</span><span class="topic">論点: GenAI利用が脳活動を低下させる神経科学的研究（Kosmyna et al., 2025）</span></p>
+    <p class="q-item"><span class="orig">"In conclusion, using general purpose GenAI tools carries risks, particularly if students use them to avoid the cognitive effort that educational tasks are designed to elicit. However, learning science also recognises that learners may need 'scaffolding', support that is gradually removed as students become more proficient."</span><span class="topic">論点: GenAIツールのリスクと足場かけとしての教育的活用</span></p>
+    <p class="q-item"><span class="orig">"On average, across OECD countries, 36% of lower secondary teachers' report having used AI in their work in the 12 months prior to the 2024 survey, with very large cross-country variations. Around 75% of teachers in Singapore and the United Arab Emirates report using AI compared to fewer than 20% of teachers in France and Japan."</span><span class="topic">論点: 日本の教員のAI利用率の低さ（OECD平均と比較。ただし「20%未満」という概数のみで17%という桁は本文書には無い——正確な桁は出典2のTALIS国別ノート）</span></p>
+    <p class="q-item"><span class="orig">"As for the teachers who have not used it, they report feeling overwhelmed by the growing expectation to integrate digital tools in education, which they see as a barrier to using AI in their teaching. This varies markedly across systems, from fewer than 20% in Brazil, Chile, Costa Rica, Italy, Morocco, Türkiye and the United Arab Emirates, to over 50% in Croatia, the Flemish Community of Belgium, Japan and Serbia."</span><span class="topic">論点: 教員のAI不使用理由の国際比較</span></p>
+    <p class="q-item"><span class="orig">"Ultimately, when designed with strong pedagogy and a human-centred approach, GenAI can do far more than help students complete tasks. ...The challenge for policymakers is to ensure that GenAI is a learning partner and not a learning shortcut."</span><span class="topic">論点: 政策立案者への提言（Section Iのpull-quoteの根拠）</span></p>
+  </div>
+
+  <div class="evidence-group" id="ev-4">
+    <h4><a class="cite" href="#src-4">[4]</a> Bastani et al. (2024), PNAS</h4>
+    <p class="q-item"><span class="orig">本レポートでは同論文を独自に一次確認していない。トルコの高校生実験（GPT-4練習+48%→テスト−17%、GPT Tutor練習+127%→テスト±0%）の記述は、出典3（OECD DEO 2026）が本論文を要約・引用した内容に基づく。</span><span class="topic">論点: Fig.2の数値の出所に関する透明性の明記</span></p>
+  </div>
+
+  <div class="evidence-group" id="ev-5">
+    <h4><a class="cite" href="#src-5">[5]</a> Kosmyna et al. (2025), "Your Brain on ChatGPT"</h4>
+    <p class="q-item"><span class="orig">本レポートでは同論文を独自に一次確認していない。5大学の学生の想起率実験（12% vs 89%）と脳活動データの記述は、出典3（OECD DEO 2026）が本論文を要約・引用した内容に基づく（原文は出典3のev-3内、2つ目の抜粋を参照）。</span><span class="topic">論点: Fig.3の数値の出所に関する透明性の明記</span></p>
+  </div>
+
+  <div class="evidence-group" id="ev-6">
+    <h4><a class="cite" href="#src-6">[6]</a> 文部科学省ガイドラインVer.2.0</h4>
     <p class="q-item"><span class="orig">「本ガイドラインは、教職員や教育委員会等の学校教育関係者を主たる読み手として、学校現場における生成AIの適切な利活用を実現するための参考資料となるよう、利活用に当たっての基本的な考え方や押さえるべきポイントをまとめたものであり、学校現場での生成AIの利活用を一律に禁止したり義務付けたりするものではない。」</span><span class="topic">論点: 日本の生成AIガイドラインの位置付けと目的</span></p>
     <p class="q-item"><span class="orig">「生成AIの普及も念頭に置きつつ、発達の段階に応じて以下のような学習活動を強化することが求められる。情報セキュリティの重要性とその具体的対策について考えさせる学習活動（高等学校段階のみ）」</span><span class="topic">論点: 高等学校における情報セキュリティ教育の強化</span></p>
   </div>
 
-  <div class="evidence-group">
-    <h4>学校現場における生成AIの利活用〜ガイドラインとその実践例〜</h4>
+  <div class="evidence-group" id="ev-7">
+    <h4><a class="cite" href="#src-7">[7]</a> 学校現場における生成AIの利活用〜ガイドラインとその実践例〜</h4>
     <p class="q-item"><span class="orig">「茨城県立 竜ヶ崎第一高等学校：Pythonを用いたアプリの作成時にAIを活用してコードを作成。プロンプトを工夫しながら、目的に見合うコードを組み込みアプリを完成させる。」</span><span class="topic">論点: 高等学校における生成AIプログラミング学習事例</span></p>
     <p class="q-item"><span class="orig">「山形県立 酒田光陵高等学校：JavaScriptでゲームの開発を行う授業。実際のゲームの動作を考え、生成AIに繰り返し指示し、何が不足するのかを考えながら理想を目指す。」</span><span class="topic">論点: 高等学校における生成AIシステム設計学習事例</span></p>
     <p class="q-item"><span class="orig">「大分県立 情報科学高等学校：データベースのSQLを扱う実習において、作成する構文やエラーの解読に活用。40人一斉の実習で、生成AIが各生徒にアドバイスを提供。」</span><span class="topic">論点: 高等学校における生成AIデータベース構築学習事例</span></p>
   </div>
 
-  <div class="evidence-group">
-    <h4>Australian Framework for Generative Artificial Intelligence (AI) in Schools</h4>
+  <div class="evidence-group" id="ev-8">
+    <h4><a class="cite" href="#src-8">[8]</a> Australian Framework for Generative Artificial Intelligence (AI) in Schools</h4>
     <p class="q-item"><span class="orig">"The Framework is aspirational in nature, defining what safe, ethical and responsible use of generative AI should look like to support better school outcomes."</span><span class="topic">論点: フレームワークの性質と目指す理想像</span></p>
   </div>
 
-  <div class="evidence-group">
-    <h4>2024 Review of the Australian Framework for Generative Artificial Intelligence in Schools</h4>
+  <div class="evidence-group" id="ev-9">
+    <h4><a class="cite" href="#src-9">[9]</a> 2024 Review of the Australian Framework for Generative Artificial Intelligence in Schools</h4>
     <p class="q-item"><span class="orig">"The AI Compliance and Standards working group, led by Education Services Australia (ESA) is overseeing one key project in the Taskforce's 2024-25 Workplan: National Product Expectations."</span><span class="topic">論点: AI製品のコンプライアンスと基準に関する取り組み</span></p>
     <p class="q-item"><span class="orig">"This project aims to communicate to Edtech developers, adaptors and deployers of AI consistent national expectations for AI products developed for school use."</span><span class="topic">論点: AI教育製品に対する全国的な期待値の設定</span></p>
   </div>
 
-  <div class="evidence-group">
-    <h4>中教審資料（情報・技術ワーキンググループ 第6回 資料2-3）</h4>
-    <p class="q-item"><span class="orig">「AIツールの使用と批判的思考スキルの関係を調査し、認知的オフローディング（認知負荷の外部化）が媒介要因として機能するかに焦点を当てた研究。AIツールの頻繁な使用と批判的思考能力との間に有意な負の相関があり、若年層はAIツールへの依存度が高く、批判的思考スコアが低い傾向。」（Gerlich, M. 2025, Societies, 15(1), 6）</span><span class="topic">論点: 認知的オフローディングと批判的思考スキルの負の相関</span></p>
-    <p class="q-item"><span class="orig">「小学校段階においては、まず、「②適切な取扱い」「③特性の理解」を学んだ上で、「①活用」を通した体験的な学びを深める方向性が示されている。中学校段階では、各要素の内容を深めつつ、抽象的・科学的な理解を必要とする「③特性の理解」を身に付けることを一層重視する方向性が示されている。高等学校段階では、高等教育段階での数理・データサイエンス・AI教育の動向とも連動し、文理を問わず生成AI時代に不可欠な基礎的な素養である「③特性の理解」を身に付ける方向性が示されている。」</span><span class="topic">論点: 小中高でのAI特性と適切な取扱いの学習方針</span></p>
-  </div>
-
-  <div class="evidence-group">
-    <h4>OECD Digital Education Outlook 2026</h4>
-    <p class="q-item"><span class="orig">"Another study compared differences between students who revised essays by asking for human advice or used a general-purpose LLM (Chen et al., 2025). ...when interacting with a general-purpose chatbot, some students tended to ask directly for help and implement immediately the solution received. They would often skip the diagnosis, evaluation and iteration stages. The authors refer to this as 'metacognitive laziness', a way of describing 'cognitive offloading'."</span><span class="topic">論点: 一般用途LLMがメタ認知の怠惰・認知的オフローディングを引き起こす研究</span></p>
-    <p class="q-item"><span class="orig">"In the United States, students from 5 universities were asked to write a 20-minute essay under three working conditions: writing by themselves ('brain-only'), with a search engine, or with a general-purpose GenAI tool (ChatGPT). Afterwards, within one hour of the actual essay writing, only 12% of the LLM group could quote something from their essay (exact recall) as opposed to 89% in the two other groups. ...Brain imagery suggested a shift in their executive tasks from generating content to supervising the AI-generative content, with lower neural connectivity and involvement."</span><span class="topic">論点: GenAI利用が脳活動を低下させる神経科学的研究（Kosmyna et al., 2025）</span></p>
-    <p class="q-item"><span class="orig">"In conclusion, using general purpose GenAI tools carries risks, particularly if students use them to avoid the cognitive effort that educational tasks are designed to elicit. However, learning science also recognises that learners may need 'scaffolding', support that is gradually removed as students become more proficient."</span><span class="topic">論点: GenAIツールのリスクと足場かけとしての教育的活用</span></p>
-    <p class="q-item"><span class="orig">"On average, across OECD countries, 36% of lower secondary teachers' report having used AI in their work in the 12 months prior to the 2024 survey, with very large cross-country variations. Around 75% of teachers in Singapore and the United Arab Emirates report using AI compared to fewer than 20% of teachers in France and Japan."</span><span class="topic">論点: 日本の教員のAI利用率の低さ（OECD平均と比較）</span></p>
-    <p class="q-item"><span class="orig">"As for the teachers who have not used it, they report feeling overwhelmed by the growing expectation to integrate digital tools in education, which they see as a barrier to using AI in their teaching. This varies markedly across systems, from fewer than 20% in Brazil, Chile, Costa Rica, Italy, Morocco, Türkiye and the United Arab Emirates, to over 50% in Croatia, the Flemish Community of Belgium, Japan and Serbia."</span><span class="topic">論点: 教員のAI不使用理由の国際比較</span></p>
-  </div>
-
-  <div class="evidence-group">
-    <h4>スウェーデン就学前教育課程2025（Läroplan för förskolan – Lpfö 18, reviderad 2025）</h4>
+  <div class="evidence-group" id="ev-10">
+    <h4><a class="cite" href="#src-10">[10]</a> スウェーデン就学前教育課程2025（Läroplan för förskolan – Lpfö 18, reviderad 2025）</h4>
     <p class="q-item"><span class="orig">"Upplagan innehåller inte krav på att digitala lärverktyg ska användas i förskolan."（本改訂版は、幼稚園においてデジタル学習ツールの使用を義務付ける要件を含まない）</span><span class="topic">論点: 幼稚園におけるデジタル学習ツール使用義務の撤廃</span></p>
+    <p class="q-item"><span class="orig">"För barn i åldern under 2 år bör endast analoga lärverktyg användas."（2歳未満の子どもには、アナログの学習ツールのみを使用すべきである）</span><span class="topic">論点: 2歳未満児へのアナログ学習ツール限定（本文表の「2歳未満はアナログ限定」の根拠）</span></p>
   </div>
 
-  <div class="evidence-group">
-    <h4>スウェーデン戦略案意見書</h4>
-    <p class="q-item"><span class="orig">（Klingberg 2023を引用する形で）スクリーンでの読書の負の効果は36%に及び、小学校中学年の約2年分の読書発達に相当すると一次資料に記載。</span><span class="topic">論点: スクリーン読書の読解力・記憶への負の効果の定量的規模</span></p>
+  <div class="evidence-group" id="ev-11">
+    <h4><a class="cite" href="#src-11">[11]</a> スウェーデン読書戦略2026–2031（Sverige – Ett läsande land: En lässtrategi för Sverige 2026–2031）</h4>
+    <p class="q-item"><span class="orig">"Vissa studier av barn i låg- och mellanstadieåldern som läser på skärm visar att läsförståelsen blir lägre vid skärmläsning jämfört med läsning på papper."（低学年から中学年の子どもを対象とする一部の研究では、スクリーンでの読書は紙での読書に比べて読解力が低くなることが示されている）</span><span class="topic">論点: スクリーン読書と紙読書の読解力差</span></p>
+    <p class="q-item"><span class="orig">"De bästa förutsättningarna för att utveckla grundläggande färdigheter som att läsa och skriva ges i analoga miljöer och med analoga lärverktyg."（読み書きの基礎スキルを育てる最良の条件は、アナログ環境とアナログ学習ツールによって与えられる）</span><span class="topic">論点: 基礎的な読み書きスキルはアナログ環境で最もよく育つ</span></p>
+    <p class="q-item"><span class="orig">"Regeringen avser därför att göra skolan mobilfri och har i mars 2026 beslutat om propositionen Bättre förutsättningar för trygghet och studiero i skolan (prop. 2025/26:193)."（そのため政府は学校をモバイルフリーにする方針であり、2026年3月に法案「学校における安心と学習環境の改善のための条件」（prop. 2025/26:193）について決定した）</span><span class="topic">論点: 学校モバイルフリー化の政府方針決定（2026年3月）</span></p>
+    <p class="q-item"><span class="orig">"I propositionen föreslås att det ska bli obligatoriskt att samla in elevers mobiltelefoner under hela skoldagen i förskoleklassen, grundskolan, anpassade grundskolan, specialskolan och sameskolan."（法案では、就学前学級・義務教育学校・特別支援学校等において、生徒の携帯電話を1日を通じて回収することを義務化することが提案されている）</span><span class="topic">論点: 携帯電話の終日回収義務化（本文表・コントラストボックスの根拠）</span></p>
   </div>
 
-  <div class="evidence-group">
-    <h4>ノルウェースクリーン委員会報告</h4>
-    <p class="q-item"><span class="orig">"I lys av den nedadgående trenden i leseferdigheter, samt økningen av elever på laveste leseferdighetsnivå i PISA og PIRLS, er det viktig at skjermbruk i skolen ikke fortrenger lesning på papir."（読解力の下降トレンド、およびPISA・PIRLSにおける最低読解力レベルの生徒の増加を踏まえ、学校でのスクリーン使用が紙での読書を妨げないことが重要）</span><span class="topic">論点: 読解力低下トレンドとPISA・PIRLS最低読解力層の増加</span></p>
-    <p class="q-item"><span class="orig">"En foreløpig konklusjon fra utvalget er at det er mye som tyder på at elevene bør lese mer på papir."（委員会の暫定的結論として、生徒はもっと紙で読むべきであることを示す多くの根拠がある）</span><span class="topic">論点: 生徒がもっと紙で読むべきという暫定結論</span></p>
-  </div>
-
-  <div class="evidence-group">
-    <h4>デンマーク・スクリーン利用勧告</h4>
-    <p class="q-item"><span class="orig">"Danske elever er dem, der bruger digitale værktøjer mest af alle... 72 procent af de danske elever har svaret, at de en typisk uge bruger digitale værktøjer i hver eller næsten hver time. Til sammenligning svarer 16 procent i OECD-gennemsnit det samme."（デンマークの生徒は最もデジタルツールを使用している。典型的な週において毎時間またはほぼ毎時間デジタルツールを使用すると回答した生徒は72%。比較としてOECD平均は16%）</span><span class="topic">論点: デンマークの生徒のデジタルツール利用時間がOECD平均を大幅に上回る現状</span></p>
+  <div class="evidence-group" id="ev-12">
+    <h4><a class="cite" href="#src-12">[12]</a> デンマーク・スクリーン利用勧告（Skærmbrug i grundskolen）</h4>
+    <p class="q-item"><span class="orig">"Danske elever er dem, der bruger digitale værktøjer mest af alle... 72 procent af de danske elever har svaret, at de en typisk uge bruger digitale værktøjer i hver eller næsten hver time. Til sammenligning svarer 16 procent i OECD-gennemsnit det samme."（デンマークの生徒は最もデジタルツールを使用している。典型的な週において毎時間またはほぼ毎時間デジタルツールを使用すると回答した生徒は72%。比較としてOECD平均は16%）</span><span class="topic">論点: デンマークの生徒のデジタルツール利用時間がOECD平均を大幅に上回る現状（Fig.5注記の「72%は利用頻度」の根拠）</span></p>
     <p class="q-item"><span class="orig">"Mange skoler har oplevet, hvordan mobiltelefoner har ændret undervisningen... anbefaler styrelsen, at I indfører mobilfri skole for alle elever på tværs af årgange."（多くの学校が携帯電話が授業をどう変えたかを経験しており、当局は全学年を対象にモバイルフリーの学校の導入を推奨する）</span><span class="topic">論点: モバイルフリーな学校の推奨</span></p>
   </div>
 
-  <div class="evidence-group">
-    <h4>フィンランド・デジタル化方針2027</h4>
-    <p class="q-item"><span class="orig">"Visiolauseessa Suomi on maailman johtava kestävän digitalisaation kehittäjä ja hyödyntäjä kasvatuksessa, opetuksessa ja koulutuksessa vuonna 2027."（ビジョン声明において、フィンランドは2027年に教育・指導・訓練における持続可能なデジタル化の世界的リーダー開発者・活用者となる）</span><span class="topic">論点: フィンランドのデジタル化に関する長期ビジョン</span></p>
+  <div class="evidence-group" id="ev-13">
+    <h4><a class="cite" href="#src-13">[13]</a> ノルウェースクリーン委員会報告（Konsekvenser av skjerm i skolen）</h4>
+    <p class="q-item"><span class="orig">"I lys av den nedadgående trenden i leseferdigheter, samt økningen av elever på laveste leseferdighetsnivå i PISA og PIRLS, er det viktig at skjermbruk i skolen ikke fortrenger lesning på papir."（読解力の下降トレンド、およびPISA・PIRLSにおける最低読解力レベルの生徒の増加を踏まえ、学校でのスクリーン使用が紙での読書を妨げないことが重要）</span><span class="topic">論点: 読解力低下トレンドとPISA・PIRLS最低読解力層の増加（平均点でなく分布の言及）</span></p>
+    <p class="q-item"><span class="orig">"En foreløpig konklusjon fra utvalget er at det er mye som tyder på at elevene bør lese mer på papir."（委員会の暫定的結論として、生徒はもっと紙で読むべきであることを示す多くの根拠がある）</span><span class="topic">論点: 生徒がもっと紙で読むべきという暫定結論</span></p>
   </div>
 
-  <div class="evidence-group">
-    <h4>東大脳科学研究</h4>
-    <p class="q-item"><span class="orig">「スケジュールなどを書き留める際に、スマートフォンなどの電子機器と比較して、紙の手帳を使った方が、記憶の想起に対する脳活動が定量的に高くなることを発見しました。」</span><span class="topic">論点: 紙媒体使用時の脳活動の優位性</span></p>
+  <div class="evidence-group" id="ev-14">
+    <h4><a class="cite" href="#src-14">[14]</a> フィンランド・デジタル化方針2027（Kasvatuksen ja koulutuksen digitalisaation linjaukset 2027）</h4>
+    <p class="q-item"><span class="orig">"Visiolauseessa Suomi on maailman johtava kestävän digitalisaation kehittäjä ja hyödyntäjä kasvatuksessa, opetuksessa ja koulutuksessa vuonna 2027."（ビジョン声明において、フィンランドは2027年に教育・指導・訓練における持続可能なデジタル化の世界的リーダー開発者・活用者となる）</span><span class="topic">論点: フィンランドのデジタル化に関する長期ビジョン（2023年4月発表）</span></p>
+    <p class="q-item"><span class="orig">（項目6・7の要旨）コロナ禍の遠隔教育移行を「成功体験」とし、そこで培われたデジタル実践を継続活用する方針が示されている。</span><span class="topic">論点: コロナ禍のデジタル成功体験を基盤とした継続推進（本文表の根拠）</span></p>
   </div>
 
-  <div class="evidence-group">
-    <h4>PISA生徒とデバイス報告 / PISA in Focus No.124</h4>
-    <p class="q-item"><span class="orig">"59% of students across the OECD said their attention was diverted due to other students using phones, tablets or laptops in at least some maths lessons."</span><span class="topic">論点: 他の生徒によるデジタルデバイス使用が学習集中を妨げる問題</span></p>
-    <p class="q-item"><span class="orig">"In Japan and Korea, the percentage [of students distracted by using digital devices in every or most of their mathematics lessons] is less than 10%."</span><span class="topic">論点: 日本におけるデジタルデバイスによる集中阻害の割合の低さ</span></p>
+  <div class="evidence-group" id="ev-15">
+    <h4><a class="cite" href="#src-15">[15]</a> Wikipedia / factsmaps.com / theglobaleconomy.com — PISA読解力得点集計</h4>
+    <p class="q-item"><span class="orig">（逐語引用なし・二次集計データ）読解力平均点 2006年→2022年: フィンランド547→490（−57）、スウェーデン507→487（−20）、デンマーク494→489（−5）、ノルウェー484→477（−7）、日本498→516（+18）。</span><span class="topic">論点: Fig.4の元データ。OECD公式データベースでの裏取りは本レポートでは未実施</span></p>
   </div>
 
-  <div class="evidence-group">
-    <h4>次期ICT環境整備方針WG取りまとめ</h4>
+  <div class="evidence-group" id="ev-16">
+    <h4><a class="cite" href="#src-16">[16]</a> スウェーデン戦略案意見書（Karolinska Institutet, Beslut om yttrande）</h4>
+    <p class="q-item"><span class="orig">（Klingberg 2023を引用する形で）スクリーンでの読書の負の効果は36%に及び、小学校中学年の約2年分の読書発達に相当すると一次資料に記載。</span><span class="topic">論点: スクリーン読書の読解力・記憶への負の効果の定量的規模</span></p>
+    <p class="q-item"><span class="orig">"Studier visar dessutom att det är sämre för inlärningen om elever tar anteckningar på dator istället för med papper och penna (Mueller &amp; Oppenheimer, 2014)."（さらに、生徒が紙とペンの代わりにパソコンでノートを取ると学習効果が劣ることが研究で示されている）</span><span class="topic">論点: 手書きノートの学習効果優位性（Mueller &amp; Oppenheimer, 2014）——本文中で言及されながら未収録だった引用</span></p>
+  </div>
+
+  <div class="evidence-group" id="ev-17">
+    <h4><a class="cite" href="#src-17">[17]</a> 東大脳科学研究</h4>
+    <p class="q-item"><span class="orig">「スケジュールなどを書き留める際に、スマートフォンなどの電子機器と比較して、紙の手帳を使った方が、記憶の想起に対する脳活動が定量的に高くなることを発見しました。」</span><span class="topic">論点: 紙媒体使用時の脳活動の優位性（従来は根拠抜粋のみで本文未記載だったため、本文にも追記）</span></p>
+  </div>
+
+  <div class="evidence-group" id="ev-18">
+    <h4><a class="cite" href="#src-18">[18]</a> フィンランド国家教育庁公式見解（Finnish National Agency for Education, "PISA results reflect broader changes in Finnish society"）</h4>
+    <p class="q-item"><span class="orig">"increasing socio-economic inequalities between families, the level of resources allocated to education, polarisation in children's and young people's literacy, lack of motivation, loss of faith in education, pull of the social media, and mental health problems."（家庭間の社会経済的不平等の増大、教育への資源配分の水準、子ども・若者の読み書き能力の二極化、動機の欠如、教育への信頼喪失、ソーシャルメディアの牽引力、メンタルヘルス問題）</span><span class="topic">論点: PISA得点下落要因の多元的説明（デジタル化政策を主因としない）</span></p>
+    <p class="q-item"><span class="orig">"In the latest PISA study, for example, the more pupils said they used digital devices, the better their competence in mathematics was, as long as they did not spend more than six hours a day on their devices."（最新のPISA調査では、1日6時間を超えない範囲で、デジタル機器の使用が多いと答えた生徒ほど数学の成績が良かった）</span><span class="topic">論点: デジタル機器使用の用量反応関係（1日6時間閾値）</span></p>
+  </div>
+
+  <div class="evidence-group" id="ev-19">
+    <h4><a class="cite" href="#src-19">[19]</a> フィンランド携帯電話規制法（Valtioneuvosto, "Restrictions to be placed on the use of phones and mobile devices in schools"）</h4>
+    <p class="q-item"><span class="orig">"the use of phones or other mobile devices during lessons would be prohibited as a rule"（授業中の携帯電話・モバイル機器の使用は原則禁止とする）</span><span class="topic">論点: 授業中の携帯電話・モバイル機器使用の原則禁止（施行日: 2025年8月1日）</span></p>
+    <p class="q-item"><span class="orig">"Students would only be allowed to use their phones or other mobile devices during lessons for learning purposes or for personal healthcare reasons with permission"（生徒が授業中に携帯電話・モバイル機器を使用できるのは、学習目的または個人の健康上の理由により許可がある場合に限る）</span><span class="topic">論点: 学習目的・健康上の理由での許可制利用という除外規定</span></p>
+  </div>
+
+  <div class="evidence-group" id="ev-20">
+    <h4><a class="cite" href="#src-20">[20]</a> PISA in Focus No.124（Managing screen time）</h4>
+    <p class="q-item"><span class="orig">"Furthermore, students can potentially struggle to navigate digital environments, leading to difficulties in maintaining concentration or affecting their cognitive development as well as their well-being."</span><span class="topic">論点: デジタル環境の難しさが集中力低下や認知発達に与える影響</span></p>
+    <p class="q-item"><span class="orig">"In Japan and Korea, the percentage [of students distracted by using digital devices in every or most of their mathematics lessons] is less than 10%."</span><span class="topic">論点: 日本・韓国におけるデジタルデバイスによる集中阻害の割合の低さ（Fig.5）</span></p>
+  </div>
+
+  <div class="evidence-group" id="ev-21">
+    <h4><a class="cite" href="#src-21">[21]</a> PISA生徒とデバイス報告（Students, digital devices and success）</h4>
+    <p class="q-item"><span class="orig">"Excessive use of digital devices for leisure in classrooms can negatively impact students' academic performance."</span><span class="topic">論点: 教室での娯楽目的のデジタルデバイス過剰使用が学業成績に与える悪影響</span></p>
+    <p class="q-item"><span class="orig">"59% of students across the OECD said their attention was diverted due to other students using phones, tablets or laptops in at least some maths lessons."</span><span class="topic">論点: 他の生徒によるデジタルデバイス使用が学習集中を妨げる問題（Fig.5のOECD平均59%の根拠）</span></p>
+  </div>
+
+  <div class="evidence-group" id="ev-22">
+    <h4><a class="cite" href="#src-22">[22]</a> 文部科学省「学校における教育の情報化の実態等に関する調査」令和6年3月確定値</h4>
+    <p class="q-item"><span class="orig">（逐語引用なし・統計表からの直接転記）無線LAN整備率41.0%→96.2%、大型提示装置整備率52.2%→89.6%、校務支援システム整備率57.5%→91.4%、児童生徒1人当たり端末数0.2台→1.1台（2019年3月→2024年3月）。</span><span class="topic">論点: Fig.6の元データ</span></p>
+  </div>
+
+  <div class="evidence-group" id="ev-23">
+    <h4><a class="cite" href="#src-23">[23]</a> 次期ICT環境整備方針WG取りまとめ</h4>
     <p class="q-item"><span class="orig">「大半の学校で必要なネットワーク帯域（速度）が確保されていない状況では、１人１台端末を有効に活用できず、ひいては、GIGAスクール構想が目指す個別最適な学びと協働的な学びの一体的な充実等が実現できないこととなるため、学校のネットワークの改善が急務である。」</span><span class="topic">論点: ネットワーク改善の喫緊の必要性</span></p>
     <p class="q-item"><span class="orig">「教員が使用する端末のうち、学習指導のために用いる指導者用端末については、令和４（2022）年度末の調査で、約４割の地方公共団体で教員１人１台環境が実現しておらず、学習者用端末の日常的な利活用の阻害要因の一つとなっている。」</span><span class="topic">論点: 指導者用端末の整備状況と課題</span></p>
     <p class="q-item"><span class="orig">「ICT支援員について、文部科学省は、４校に１人程度を目標に掲げて配置を促進してきたものの、令和４年度末時点の配置実績は、約7,100人（約4.6校に１人）となっており、目標水準が達成されていない状況にある。」</span><span class="topic">論点: ICT支援員配置の現状と課題</span></p>
   </div>
 
-  <div class="evidence-group">
-    <h4>フィンランド国家教育庁公式見解（Finnish National Agency for Education, "PISA results reflect broader changes in Finnish society"）</h4>
-    <p class="q-item"><span class="orig">"increasing socio-economic inequalities between families, the level of resources allocated to education, polarisation in children's and young people's literacy, lack of motivation, loss of faith in education, pull of the social media, and mental health problems."（家庭間の社会経済的不平等の増大、教育への資源配分の水準、子ども・若者の読み書き能力の二極化、動機の欠如、教育への信頼喪失、ソーシャルメディアの牽引力、メンタルヘルス問題）</span><span class="topic">論点: PISA得点下落要因の多元的説明（デジタル化政策を主因としない）</span></p>
-    <p class="q-item"><span class="orig">"In the latest PISA study, for example, the more pupils said they used digital devices, the better their competence in mathematics was, as long as they did not spend more than six hours a day on their devices."（最新のPISA調査では、1日6時間を超えない範囲で、デジタル機器の使用が多いと答えた生徒ほど数学の成績が良かった）</span><span class="topic">論点: デジタル機器使用の用量反応関係（1日6時間閾値）</span></p>
+  <div class="evidence-group" id="ev-24">
+    <h4><a class="cite" href="#src-24">[24]</a> 学研 / CyberAgent / 進学ネット / 総務省情報通信白書</h4>
+    <p class="q-item"><span class="orig">（逐語引用なし・複数調査の集計レンジ）生成AI利用経験率: 高校生73.7–92.5%、大学生44.7–86.3%（2024–2025各種調査の最小〜最大）。</span><span class="topic">論点: Fig.7の元データ。調査間で定義・対象者が異なるため単一値でなくレンジで提示</span></p>
   </div>
 
-  <div class="evidence-group">
-    <h4>フィンランド携帯電話規制法（Valtioneuvosto, "Restrictions to be placed on the use of phones and mobile devices in schools"）</h4>
-    <p class="q-item"><span class="orig">"the use of phones or other mobile devices during lessons would be prohibited as a rule"（授業中の携帯電話・モバイル機器の使用は原則禁止とする）</span><span class="topic">論点: 授業中の携帯電話・モバイル機器使用の原則禁止（施行日: 2025年8月1日）</span></p>
-    <p class="q-item"><span class="orig">"Students would only be allowed to use their phones or other mobile devices during lessons for learning purposes or for personal healthcare reasons with permission"（生徒が授業中に携帯電話・モバイル機器を使用できるのは、学習目的または個人の健康上の理由により許可がある場合に限る）</span><span class="topic">論点: 学習目的・健康上の理由での許可制利用という除外規定</span></p>
-  </div>
-
-  <p style="font-size:12px; color:var(--faint); margin-top:20px;">出典：日豪AI教育政策比較（v3, 2026-07-12）、AI認知的オフローディング（v3, 2026-07-13）、北欧アナログ回帰（v3, 2026-07-14）の3レポートの根拠抜粋、dashboard_B作成時の追加一次資料（TALIS 2024, Bastani et al. PNAS 2024, 文科省GIGAスクール実態調査等）、およびフィンランド国家教育庁・フィンランド政府公式発表（2026-07-15収集）から転記。</p>
+  <p style="font-size:12px; color:var(--faint); margin-top:20px;">出典：日豪AI教育政策比較（v3, 2026-07-12）、AI認知的オフローディング（v3, 2026-07-13）、北欧アナログ回帰（v3, 2026-07-14）の3レポートの根拠抜粋、dashboard_B作成時の追加一次資料（TALIS 2024, Bastani et al. PNAS 2024, 文科省GIGAスクール実態調査等）、およびフィンランド国家教育庁・フィンランド政府公式発表（2026-07-15収集）から転記。番号はSourcesの各項目と1対1で対応。</p>
 </details>
 
 </div>
