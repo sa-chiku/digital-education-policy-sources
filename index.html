@@ -47,7 +47,7 @@ body {
 }
 h1.display {
   font-family: var(--serif); font-weight: 700; letter-spacing: -.005em;
-  font-size: clamp(30px, 5vw, 52px); line-height: 1.18; margin: 0 0 16px; max-width: 20em;
+  font-size: clamp(28px, 4.2vw, 44px); line-height: 1.22; margin: 0 0 16px; max-width: 20em;
 }
 .dek {
   font-family: var(--serif); font-size: clamp(17px, 2.2vw, 21px); font-weight: 400;
@@ -226,11 +226,11 @@ footer.sources li { line-height: 1.55; overflow-wrap: break-word; word-break: br
   </div>
   <aside class="keyfacts">
     <h3>Key Facts</h3>
-    <div class="kf"><span class="ctx">I・Fig.1 教員のAI利用</span><div class="n">17<span class="u">%</span></div><div class="l">日本の教員のAI利用率（TALIS 2024）。OECD平均36%の半分以下<a class="cite" href="#src-2">[2]</a></div></div>
-    <div class="kf"><span class="ctx">I・Fig.2 STEM教室浸透</span><div class="n">2.7<span class="u">%</span></div><div class="l">日本の数学授業でのデジタル機器利用率（UNESCO GEM 2023）。54か国中でも最下位級<a class="cite" href="#src-25">[25]</a></div></div>
-    <div class="kf"><span class="ctx">II・Fig.3 テスト成績</span><div class="n">−17<span class="u">%</span></div><div class="l">AIなしで受けたテストの成績変化（練習中はAIありで+48%だった）<a class="cite" href="#src-4">[4]</a></div></div>
-    <div class="kf"><span class="ctx">II・Fig.4 想起率の断層</span><div class="n">12<span class="u">% vs 89%</span></div><div class="l">ChatGPTで書いた学生 vs 使わなかった学生の「自分の文章を引用できた」率<a class="cite" href="#src-5">[5]</a></div></div>
-    <div class="kf"><span class="ctx">III 北欧アナログ回帰</span><div class="n">3<span class="u">/4カ国</span></div><div class="l">北欧で「デジタルから距離を置く」動きがあるのは3カ国のみ。フィンランドは逆に推進継続<a class="cite" href="#src-14">[14]</a></div></div>
+    <div class="kf"><span class="ctx">SECTION I・FIG.1</span><div class="n">17<span class="u">%</span></div><div class="l">教員のAI利用率（TALIS 2024）。OECD平均36%の半分以下<a class="cite" href="#src-2">[2]</a></div></div>
+    <div class="kf"><span class="ctx">SECTION I・FIG.2</span><div class="n">2.7<span class="u">%</span></div><div class="l">数学授業でのデジタル機器利用率（UNESCO GEM 2023）。54か国中最下位級<a class="cite" href="#src-25">[25]</a></div></div>
+    <div class="kf"><span class="ctx">SECTION II・FIG.3</span><div class="n">−17<span class="u">%</span></div><div class="l">AIなしで受けたテストの成績変化（練習中は+48%だった）<a class="cite" href="#src-4">[4]</a></div></div>
+    <div class="kf"><span class="ctx">SECTION II・FIG.4</span><div class="n">12<span class="u">% vs 89%</span></div><div class="l">ChatGPTで書いた学生と書かなかった学生の「文章を引用できた」率<a class="cite" href="#src-5">[5]</a></div></div>
+    <div class="kf"><span class="ctx">SECTION III</span><div class="n">3<span class="u">/4カ国</span></div><div class="l">北欧で「デジタルから距離を置く」動きは3カ国のみ。フィンランドは推進継続<a class="cite" href="#src-14">[14]</a></div></div>
   </aside>
 </div>
 
@@ -333,6 +333,7 @@ footer.sources li { line-height: 1.55; overflow-wrap: break-word; word-break: br
       <text class="cat" x="203.5" y="255" text-anchor="middle" fill="#6f6f6a">ブラジル</text>
       <circle cx="186.9" cy="219.7" r="7" fill="#1a4d8f"/>
       <text class="val acc" x="186.9" y="211" text-anchor="middle">日本</text>
+      <text x="186.9" y="234" text-anchor="middle" font-size="10" font-weight="700" fill="#1a4d8f" font-variant-numeric="tabular-nums">2.7/6.4%</text>
       <circle cx="228.0" cy="220.0" r="6" fill="#9b9b96"/>
       <text class="cat" x="228.0" y="237" text-anchor="middle" fill="#6f6f6a">フィンランド</text>
       <circle cx="282.2" cy="188.6" r="6" fill="#111111"/>
@@ -341,8 +342,9 @@ footer.sources li { line-height: 1.55; overflow-wrap: break-word; word-break: br
       <text class="cat" x="295.2" y="102" text-anchor="middle" fill="#6f6f6a">韓国</text>
       <circle cx="364.6" cy="43.5" r="6" fill="#9b9b96"/>
       <text class="cat" x="364.6" y="35" text-anchor="middle" fill="#6f6f6a">スウェーデン</text>
-      <circle cx="465.7" cy="73.4" r="6" fill="#9b9b96"/>
-      <text class="cat" x="465.7" y="65" text-anchor="middle" fill="#6f6f6a">オーストラリア</text>
+      <circle cx="465.7" cy="73.4" r="6" fill="#111111"/>
+      <text class="val" x="465.7" y="65" text-anchor="middle">オーストラリア</text>
+      <text x="465.7" y="88" text-anchor="middle" font-size="10" font-weight="700" fill="#111111" font-variant-numeric="tabular-nums">23.0/29.7%</text>
     </svg>
     <p class="fig-note"><strong>読み方:</strong> 縦横とも「授業で週1時間以上デジタル機器を使った生徒の割合」。日本（数学2.7%・理科6.4%）は54か国中でも最下位級だ。教員のAI利用率17%（Fig.1）と同じ、テクノロジーが現場に浸透していないパターンである。<strong>枠外のデンマーク:</strong> 数学61.0%・理科55.5%と他国から突出しているため、図の縮尺を保つ目的で描画範囲外にした。フィンランドは政策としては推進継続だが、この指標では低浸透国側に位置する。「デジタル化を掲げる国ほど教室に浸透している」わけではない。出典: UNESCO GEM Report 2023<a class="cite" href="#src-25">[25]</a>（実数値はGEM StatLink経由でxlsx取得、2026-07-17）。</p>
   </figure>
