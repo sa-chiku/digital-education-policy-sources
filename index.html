@@ -146,7 +146,8 @@ svg.chart { display: block; width: 100%; height: auto; margin-top: 14px; }
 .fig-note strong { color: var(--ink-2); }
 
 /* Stance table */
-table.stance { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 26px 0; }
+.table-scroll { overflow-x: auto; margin: 26px 0; -webkit-overflow-scrolling: touch; }
+table.stance { width: 100%; min-width: 460px; border-collapse: collapse; font-size: 13.5px; margin: 0; }
 table.stance th {
   font-family: var(--sans); font-size: 11px; font-weight: 700; letter-spacing: .1em;
   text-transform: uppercase; color: var(--mut); text-align: left;
@@ -154,7 +155,8 @@ table.stance th {
 }
 table.stance td { border-bottom: 1px solid var(--hair); padding: 11px 12px; vertical-align: top; color: var(--ink-2); }
 table.stance td:first-child { font-family: var(--serif); font-weight: 700; font-size: 15px; color: var(--ink); white-space: nowrap; }
-.tag { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 9px; border-radius: 999px; letter-spacing: .04em; }
+.tag { display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px; letter-spacing: .02em; white-space: nowrap; }
+table.stance td:nth-child(2) { white-space: nowrap; }
 .tag.rev { background: #f6e8e7; color: var(--warm); }
 .tag.fwd { background: #e7efe9; color: var(--good); }
 
@@ -432,6 +434,7 @@ footer.sources li { line-height: 1.55; overflow-wrap: break-word; word-break: br
   <p class="standfirst">デジタルから距離を置き始めたのは、スウェーデン・ノルウェー・デンマークの3カ国だけ。フィンランドはむしろデジタル化を進めている。「北欧はみんなアナログに戻った」という話は、実際の資料と合わない。</p>
   <p class="term-note"><strong>4つの軸を区別する：</strong>「北欧のデジタル教育回帰」には①推進そのものの是非（カリキュラム方針）、②ディスプレイタイム／スクリーン読書、③携帯電話の学校持ち込み規制（娯楽利用を抑える別の話）、④AI活用の推進（一次資料はほぼ触れないが①のインフラと不可分）という別々の論点が混ざる。以下ではこの4軸を区別する。</p>
 
+  <div class="table-scroll">
   <table class="stance">
     <thead><tr><th>国</th><th>方針</th><th>具体的な措置</th></tr></thead>
     <tbody>
@@ -441,6 +444,7 @@ footer.sources li { line-height: 1.55; overflow-wrap: break-word; word-break: br
       <tr><td>フィンランド</td><td><span class="tag fwd">推進継続</span></td><td>「2027年までにデジタル化の世界的リーダーへ」<a class="cite" href="#src-14">[14]</a>。コロナ禍の遠隔教育を成功体験として継続活用<a class="cite" href="#src-14">[14]</a></td></tr>
     </tbody>
   </table>
+  </div>
 
   <figure class="chart-fig">
     <figcaption class="above">
